@@ -85,7 +85,7 @@ class __TwigTemplate_46753d7661d92d66e28f49e193340af1d24016b9f0c91136f494771aae4
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 6
-        echo "\t<section class=\"py-2 mb-5\">
+        echo "\t<section id=\"sect-bal\" class=\"py-2 mb-5\">
 \t\t<h2 class=\"py-3\">";
         // line 7
         echo twig_escape_filter($this->env, (isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 7, $this->source); })()), "html", null, true);
@@ -212,7 +212,7 @@ class __TwigTemplate_46753d7661d92d66e28f49e193340af1d24016b9f0c91136f494771aae4
 {% block title %}Balades{% endblock %}
 
 {% block content %}
-\t<section class=\"py-2 mb-5\">
+\t<section id=\"sect-bal\" class=\"py-2 mb-5\">
 \t\t<h2 class=\"py-3\">{{page_name}}</h2>
 \t\t<div class=\"d-flex justify-content-between\">
 \t\t\t<span>

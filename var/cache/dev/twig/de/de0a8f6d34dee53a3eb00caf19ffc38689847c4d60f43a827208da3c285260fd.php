@@ -77,6 +77,18 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     <body>
 \t\t<div id=\"top-content\">
+\t\t\t<header>
+\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"";
+        // line 29
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
+        echo "\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a>
+\t\t\t\t\t<div class=\"logo-div\">
+\t\t\t\t\t\t<figure class=\"logo\">
+\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
+\t\t\t\t\t\t</figure>
+\t\t\t\t\t</div> -->
+\t\t\t</header>
+\t\t\t
 \t\t\t<nav class=\"navbar sticky-top navbar-expand-lg navbar-light py-0 nav-perso \">\t\t\t
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t\t\t\t<span class=\"navbar-toggler-icon\"></span>
@@ -85,122 +97,106 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
 \t\t\t\t\t<ul class=\"navbar-nav mr-lg-auto\">
 \t\t\t\t\t\t<li class=\"nav-item ";
-        // line 35
-        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 35, $this->source); })()) == "Bienvenue"))) {
+        // line 44
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 44, $this->source); })()) == "Bienvenue"))) {
             echo "active";
         }
         echo "\"><a class=\"nav-link nav-perso \" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
         echo "\">Accueil</a></li>
 \t\t\t\t\t\t<li class=\"nav-item ";
-        // line 36
-        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 36, $this->source); })()) == "Balades"))) {
+        // line 45
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 45, $this->source); })()) == "Balades"))) {
             echo "active";
         }
         echo "\"><a class=\"nav-link nav-perso\" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_balades");
         echo "\">Balades</a></li>
 \t\t\t\t\t\t<li class=\"nav-item ";
-        // line 37
-        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 37, $this->source); })()) == "Albums"))) {
+        // line 46
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 46, $this->source); })()) == "Albums"))) {
             echo "active";
         }
         echo "\"><a class=\"nav-link nav-perso\" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_albums");
         echo "\">Albums</a></li>
 \t\t\t\t\t\t<li class=\"nav-item ";
-        // line 38
-        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 38, $this->source); })()) == "Réunions"))) {
+        // line 47
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 47, $this->source); })()) == "Réunions"))) {
             echo "active";
         }
         echo "\"><a class=\"nav-link nav-perso\" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_reunions");
         echo "\">Réunions</a></li>\t\t\t\t
 \t\t\t\t\t\t";
-        // line 40
+        // line 49
         echo "\t\t\t\t\t\t";
-        // line 41
+        // line 50
         echo "\t\t\t\t\t</ul>
+\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase name-asso\">Amicale BMW Moto 38</h1>
 \t\t\t\t\t<ul class=\"navbar-nav ml-lg-auto perso-nav-btn d-flex justify-content-end\">
 \t\t\t\t\t\t";
-        // line 43
-        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 43, $this->source); })()), "session", [], "any", false, false, false, 43), "get", [0 => "ranks"], "method", false, false, false, 43))) {
-            // line 44
-            echo "
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
+        // line 53
+        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 53, $this->source); })()), "session", [], "any", false, false, false, 53), "get", [0 => "ranks"], "method", false, false, false, 53))) {
+            // line 54
+            echo "\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a title=\"Déconnexion\" class=\"nav-link btn-link-red btn btn-outline-danger\" href=\"";
-            // line 46
+            // line 55
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deconnexion_user");
             echo "\"><i class=\"fas fa-power-off\"></i></a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1\">
 \t\t\t\t\t\t\t\t<a class=\"nav-link btn-link-grey btn btn-outline-secondary\" href=\"";
-            // line 49
+            // line 58
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_accueil");
             echo "\"><i class=\"fas fa-user-edit\"></i> ";
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "session", [], "any", false, false, false, 49), "get", [0 => "prenom"], "method", false, false, false, 49) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "session", [], "any", false, false, false, 49), "get", [0 => "nom"], "method", false, false, false, 49)), "html", null, true);
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 58, $this->source); })()), "session", [], "any", false, false, false, 58), "get", [0 => "prenom"], "method", false, false, false, 58) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 58, $this->source); })()), "session", [], "any", false, false, false, 58), "get", [0 => "nom"], "method", false, false, false, 58)), "html", null, true);
             echo "</a>
 \t\t\t\t\t\t\t</li>
-
 \t\t\t\t\t\t";
         } else {
-            // line 53
-            echo "
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
+            // line 61
+            echo "\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a title=\"Connexion\" class=\"nav-link btn-link-green btn btn-outline-success \" href=\"";
-            // line 55
+            // line 62
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("connexion_user");
             echo "\"><i class=\"fas fa-power-off\"></i></a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a class=\"nav-link btn-outline-secondary btn btn-link-grey\" href=\"";
-            // line 58
+            // line 65
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("inscription_user");
             echo "\">Inscription</a>
 \t\t\t\t\t\t\t</li>
-
 \t\t\t\t\t\t";
         }
-        // line 62
-        echo "
-\t\t\t\t\t</ul>
-\t\t\t\t\t
+        // line 68
+        echo "\t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</nav>
-\t\t\t<header>
-\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"";
-        // line 68
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
-        echo "\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a>
-\t\t\t\t\t<div class=\"logo-div\">
-\t\t\t\t\t\t<figure class=\"logo\">
-\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
-\t\t\t\t\t\t</figure>
-\t\t\t\t\t</div> -->
-\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase mx-auto name-asso\">Amicale BMW Moto 38</h1>
-\t\t\t</header>
-\t\t\t
+
 \t\t\t<main class=\"px-0\">
 \t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"row d-flex justify-content-center\">
-\t\t\t\t\t\t<img class=\"animated infinite bounce\" src=\"https://img.icons8.com/ios-filled/50/000000/expand-arrow.png\"/>\t\t\t\t\t
-\t\t\t\t\t</div>
+
+
 \t\t\t\t\t";
-        // line 82
+        // line 76
         $this->displayBlock('content', $context, $blocks);
-        // line 83
-        echo "\t\t\t\t</div>
+        // line 77
+        echo "
+
+\t\t\t\t</div>
 \t\t\t</main>
 \t\t</div>
  
 \t\t<footer class=\"base-footer footer px-5 h-auto\"> <!-- fixed-bottom -->
 \t\t\t<div class=\"row\">\t\t\t
 \t\t\t\t<div class=\"col-md-4 align-middle my-auto\"><a href =\"";
-        // line 89
+        // line 85
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("confidentialite");
         echo "\" class=\"colorlink footerlink\">Politique de confidentialité</a></div>
 \t\t\t\t<div class=\"col-md-4 text-center align-middle copyright my-auto \">GSM3 Copyright &copy; - ";
-        // line 90
+        // line 86
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</div>
 \t\t\t\t<div class=\"col-md-4 align-middle text-right my-auto\"><a href=\"https://www.flickr.com/photos/136404712@N02/albums\" target=\"blank\" class=\"colorlink footerlink\">Site photo de l'Amicale</a></div>
@@ -222,9 +218,9 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
 \t\t
         ";
-        // line 109
+        // line 105
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 110
+        // line 106
         echo "
     </body>
 </html>
@@ -274,7 +270,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     }
 
-    // line 82
+    // line 76
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -292,7 +288,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     }
 
-    // line 109
+    // line 105
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -322,7 +318,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     public function getDebugInfo()
     {
-        return array (  296 => 109,  278 => 82,  260 => 23,  241 => 5,  228 => 110,  226 => 109,  204 => 90,  200 => 89,  192 => 83,  190 => 82,  173 => 68,  165 => 62,  158 => 58,  152 => 55,  148 => 53,  139 => 49,  133 => 46,  129 => 44,  127 => 43,  123 => 41,  121 => 40,  113 => 38,  105 => 37,  97 => 36,  89 => 35,  76 => 24,  74 => 23,  53 => 5,  47 => 1,);
+        return array (  292 => 105,  274 => 76,  256 => 23,  237 => 5,  224 => 106,  222 => 105,  200 => 86,  196 => 85,  186 => 77,  184 => 76,  174 => 68,  168 => 65,  162 => 62,  159 => 61,  151 => 58,  145 => 55,  142 => 54,  140 => 53,  135 => 50,  133 => 49,  125 => 47,  117 => 46,  109 => 45,  101 => 44,  83 => 29,  76 => 24,  74 => 23,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -354,6 +350,15 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     <body>
 \t\t<div id=\"top-content\">
+\t\t\t<header>
+\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"{{ path('accueil') }}\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a>
+\t\t\t\t\t<div class=\"logo-div\">
+\t\t\t\t\t\t<figure class=\"logo\">
+\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
+\t\t\t\t\t\t</figure>
+\t\t\t\t\t</div> -->
+\t\t\t</header>
+\t\t\t
 \t\t\t<nav class=\"navbar sticky-top navbar-expand-lg navbar-light py-0 nav-perso \">\t\t\t
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t\t\t\t<span class=\"navbar-toggler-icon\"></span>
@@ -368,47 +373,34 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t\t\t\t\t{#{% if 'bureau' in app.session.get('ranks') %}#}
 \t\t\t\t\t\t{#{% endif %}#}
 \t\t\t\t\t</ul>
+\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase name-asso\">Amicale BMW Moto 38</h1>
 \t\t\t\t\t<ul class=\"navbar-nav ml-lg-auto perso-nav-btn d-flex justify-content-end\">
 \t\t\t\t\t\t{% if app.session.get('ranks') is not null %}
-
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a title=\"Déconnexion\" class=\"nav-link btn-link-red btn btn-outline-danger\" href=\"{{ path('deconnexion_user') }}\"><i class=\"fas fa-power-off\"></i></a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1\">
 \t\t\t\t\t\t\t\t<a class=\"nav-link btn-link-grey btn btn-outline-secondary\" href=\"{{ path('admin_accueil') }}\"><i class=\"fas fa-user-edit\"></i> {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}</a>
 \t\t\t\t\t\t\t</li>
-
 \t\t\t\t\t\t{% else %}
-
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a title=\"Connexion\" class=\"nav-link btn-link-green btn btn-outline-success \" href=\"{{ path('connexion_user') }}\"><i class=\"fas fa-power-off\"></i></a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a class=\"nav-link btn-outline-secondary btn btn-link-grey\" href=\"{{ path('inscription_user') }}\">Inscription</a>
 \t\t\t\t\t\t\t</li>
-
 \t\t\t\t\t\t{% endif %}
-
 \t\t\t\t\t</ul>
-\t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t</nav>
-\t\t\t<header>
-\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"{{ path('accueil') }}\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a>
-\t\t\t\t\t<div class=\"logo-div\">
-\t\t\t\t\t\t<figure class=\"logo\">
-\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
-\t\t\t\t\t\t</figure>
-\t\t\t\t\t</div> -->
-\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase mx-auto name-asso\">Amicale BMW Moto 38</h1>
-\t\t\t</header>
-\t\t\t
+
 \t\t\t<main class=\"px-0\">
 \t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"row d-flex justify-content-center\">
-\t\t\t\t\t\t<img class=\"animated infinite bounce\" src=\"https://img.icons8.com/ios-filled/50/000000/expand-arrow.png\"/>\t\t\t\t\t
-\t\t\t\t\t</div>
+
+
 \t\t\t\t\t{% block content %}{% endblock %}
+
+
 \t\t\t\t</div>
 \t\t\t</main>
 \t\t</div>

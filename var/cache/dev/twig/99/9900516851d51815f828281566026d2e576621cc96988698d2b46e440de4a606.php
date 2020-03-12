@@ -110,7 +110,7 @@ class __TwigTemplate_021b9cc75ec5f17286bc7176a8f5fa4b6217ba7417c9eca751e5ca1fc1c
 
         // line 10
         echo "
-    <section class=\"py-2 mb-5\">
+    <section id=\"sect-pict\" class=\"py-2 mb-5\">
         <h2 class=\"pt-3 pb-5\">";
         // line 12
         echo twig_escape_filter($this->env, (isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 12, $this->source); })()), "html", null, true);
@@ -218,7 +218,7 @@ class __TwigTemplate_021b9cc75ec5f17286bc7176a8f5fa4b6217ba7417c9eca751e5ca1fc1c
 
 {% block content %}
 
-    <section class=\"py-2 mb-5\">
+    <section id=\"sect-pict\" class=\"py-2 mb-5\">
         <h2 class=\"pt-3 pb-5\">{{page_name}}</h2>
         <div id=\"content\">
             <div class=\"row\">

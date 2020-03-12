@@ -9,9 +9,11 @@
 {% endblock %}
 
 {% block content %}
-
-	<section class="py-2 mb-5">
-		<h2 class="pb-5 pt-5 bienvenue">{{page_name}}</h2>
+	<div class="row d-flex justify-content-center">
+		<img class="animated infinite bounce arrow-perso" src="https://img.icons8.com/ios-filled/50/000000/expand-arrow.png"/>					
+	</div>
+	<section id="sect-intro"class="py-2 mb-5">
+		<h2 class="pb-5 pt-5">{{page_name}}</h2>
 		<div class="container " >
 		<h3 class="pb-5">Qui sommes-nous ?</h3>
 			<p class="pb-5">Amicale de motards de l'Isère, notre objectif est de partager le plaisir de rouler dans un esprit de convivialité et de solidarité avec tous les passionnés de moto.</p>
@@ -68,7 +70,7 @@
 		</div>
 	</section>
 	<!-- section bleue !-->
-	<section class="py-5 mb-5">
+	<section id="sect-cta" class="py-5 mb-5">
 		{% if app.session.get('ranks') is  null %}
 			<div class="row">
 				<div class="col align-self-center py-3">
@@ -96,14 +98,14 @@
 		{% endif %}
 					
 	</section>
-	<section class="py-5 mb-5 parallax" >
+	<section id="sect-form" class="py-5 mb-5 parallax" >
 	  	<div class="container">
 	    	<div class="card card-register mx-auto mt-5 pb-5 mb-5 form-perso">
         		<div class="card-body">
         			<form method="post">
             			<div class="form-group">
             				<div class="form-row">
-								<h3 class="pb-3">Contactez nous</h3>	
+								<h3 class="pb-3" id="contact">Contactez nous</h3>	
             				</div>
             				<div class="form-row">
                 				<div class="col-md-6">
@@ -159,7 +161,7 @@
     		</div>
     	</div>
 	</section>
-	<section class="py-5 mb-5">
+	<section id="portfolio" class="py-5 mb-5">
 		<h2 class="pb-5">Portfolio</h2>
 		<div class="content ml-4 pr-4">
 			<div class="row">

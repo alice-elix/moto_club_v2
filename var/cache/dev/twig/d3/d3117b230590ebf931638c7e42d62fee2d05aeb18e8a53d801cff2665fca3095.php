@@ -107,7 +107,7 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
 
         // line 8
         echo "    
-\t<section class=\"py-2 mb-5\">
+\t<section id=\"sect-reu\" class=\"py-2 mb-5\">
 \t<h2 class=\"py-3\">";
         // line 10
         echo twig_escape_filter($this->env, (isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 10, $this->source); })()), "html", null, true);
@@ -264,7 +264,7 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
 
 {% block content %}
     
-\t<section class=\"py-2 mb-5\">
+\t<section id=\"sect-reu\" class=\"py-2 mb-5\">
 \t<h2 class=\"py-3\">{{page_name}} </h2>
 \t{% if 'bureau' in app.session.get('ranks') %}
 \t\t<div class=\"d-flex justify-content-end\">

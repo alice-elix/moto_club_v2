@@ -16,37 +16,31 @@ body{
 	width: 100%;
   	min-height: 100%;
   	overflow-x: hidden;
-
   	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 	background-color:#fff;
 	font-family: 'arial';
-	
 	padding: 0;
 	margin:0;
 }
 
-header{
-	padding: 0;
-	/*box-sizing: border-box;*/
+#top-content{
 	background: url(../images/img3.jpg);
-	height: 87vh;
 	background-size: cover;
-}
+	background-attachment: fixed;
 
+}
 nav{
 	min-height: 4em;
 	background: rgb(46, 127, 240);
-	box-shadow: 1px 5px 5px lightgrey;
-	
+	box-shadow: 1px 5px 5px black;	
 }
 
 
 main > .container {
-	box-shadow: 1px 5px 5px lightgrey;
-	background-color:#ffffff33;
+	background-color:#c0c0c099;
+	border-radius: 5px;
 }
 
 
@@ -56,19 +50,36 @@ section {
 	padding-left: 1em;
 	padding-right: 1em;
 }
+
 h1{
 	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+h2{
+	text-transform: uppercase;
+	color: #000;
 	text-shadow: 1px 5px 5px #fff;
+	font-weight: 400;
+	letter-spacing: 4px;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+.policy {
+	font-size: 2.5em;
 }
 
 .hidden{
 	display: none;
- /********************************* header *************************/
 }
 
+ /********************************* header *************************/
+
 .name-asso {
-	font-size: 2.5em;
-	padding-top: 1em;
+	font-size: 1.9em;
+	padding: 0.5em 0;
+	margin: 0;
 }
 
 /*@media screen and (){
@@ -164,20 +175,6 @@ nav ul li a.active{
 
 /****************************************** Contenu des pages ******************************************************/
 
-h2{
-	text-transform: uppercase;
-	color: #000;
-	text-shadow: 1px 5px 5px #fff;
-	font-weight: 400;
-	letter-spacing: 4px;
-	font-size: 5em;
-	transform: 0.8s all;
-	text-align: center;
-}
-
-.policy {
-	font-size: 2.5em;
-}
 
 /******* intro *********/
 
@@ -257,9 +254,9 @@ h2{
 
 /*moyen*/
 @media screen and (min-width: 360px) and (max-width:768px) {
-	.name-asso {
+	/*.name-asso {
 		font-size :2em;	
-	}
+	}*/
 	h2 {
 		font-size : 2.5em;
 	}
@@ -271,10 +268,10 @@ h2{
 
 /*petit*/
 @media screen and (max-width: 360px){
-	.name-asso{
+	/*.name-asso{
 		font-size: 1.5em;
 	
-	}
+	}*/
 		h2 {
 		font-size : 2em;
 	}

@@ -1,9 +1,31 @@
 /*********** header**************/
 
-/*header {
+header {
+	padding: 0;
+	background: url(../images/img3.jpg);
+	background-size: cover;
 	height: 87vh;
 }
 
+/************ content ************/
+#top-content{
+	background: url();
+}
+
+h2{
+	text-shadow: 1px 1px 1px #000;
+}
+
+
+main > .container {
+	box-shadow: 1px 5px 5px lightgrey;
+	background-color:#ffffff99;
+}
+#contact{
+	text-shadow: 1px 1px 1px #fff;
+}
+
+/*
 .name-asso {
 	font-size: 5em;
 	padding-top: 0.5em;
