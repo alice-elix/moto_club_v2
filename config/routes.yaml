@@ -1,0 +1,223 @@
+############################# Default ##################
+
+accueil:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+confidentialite:
+    path: /politique-de-confidentialite
+    controller: App\Controller\DefaultController::confidentialite
+
+############################# BackOffice ##################
+
+admin_accueil:
+    path: /backoffice/accueil
+    controller: App\Controller\BackOfficeController::index
+
+liste_users:
+    path: /backoffice/utilisateurs
+    controller: App\Controller\BackOfficeController::viewUsers
+
+############################# Users ##################
+inscription_user:
+    path: /users/inscription
+    controller: App\Controller\UsersController::inscriptionUser
+
+connexion_user:
+    path: /users/login
+    controller: App\Controller\UsersController::loginUser
+
+deconnexion_user:
+    path: /users/logout
+    controller: App\Controller\UsersController::logoutUser
+
+forgot_password:
+    path: /users/forgot-password
+    controller: App\Controller\UsersController::forgotPasswordUser
+
+reinit_password:
+    path: /users/reinit-password
+    controller: App\Controller\UsersController::reinitPasswordUser
+
+view_profile:
+    path: /users/profil
+    controller: App\Controller\UsersController::viewProfile
+
+############################# Balades ##################
+
+index_balades:
+    path: /balades
+    controller: App\Controller\BaladesController::indexBalades
+
+add_balade:
+    path: /balades/ajouter
+    controller: App\Controller\BaladesController::addBalade
+
+edit_balade:
+    path: /balades/modifier/{id}
+    controller: App\Controller\BaladesController::editBalade
+    requirements:
+      id: '\d+'
+
+del_balade:
+    path: /balades/supprimer/{id}
+    controller: App\Controller\BaladesController::delBalade
+    requirements:
+      id: '\d+'
+
+view_balade:
+    path: /balades/{id}
+    controller: App\Controller\BaladesController::viewBalade
+    requirements:
+      id: '\d+'
+
+inscription_balade:
+    path: /balades/inscription/{id}
+    controller: App\Controller\BaladesController::inscriptionBalade
+    requirements:
+      id: '\d+'
+
+desinscription_balade:
+    path: /balades/desinscription/{id}
+    controller: App\Controller\BaladesController::desinscriptionBalade
+    requirements:
+      id: '\d+'
+
+gestion_balades:
+    path: /balades/gestion
+    controller: App\Controller\BaladesController::gestionBalades
+
+valider_balade:
+    path: /balades/valider/{id}
+    controller: App\Controller\BaladesController::validerBalade
+    requirements:
+      id: '\d+'
+
+refuser_balade:
+    path: /balades/refuser/{id}
+    controller: App\Controller\BaladesController::refuserBalade
+    requirements:
+      id: '\d+'
+
+cloturer_inscriptions:
+    path: /balades/cloturer-inscriptions/{id}
+    controller: App\Controller\BaladesController::cloturerInscriptions
+    requirements:
+      id: '\d+'
+
+ouvrir_inscriptions:
+    path: /balades/ouvrir-inscriptions/{id}
+    controller: App\Controller\BaladesController::ouvrirInscriptions
+    requirements:
+      id: '\d+'
+
+gestion_inscrits:
+    path: /balades/gestion/{id}
+    controller: App\Controller\BaladesController::gestionInscrits
+    requirements:
+      id: '\d+'
+
+exclure_inscrit:
+    path: /balades/exclure/{id}
+    controller: App\Controller\BaladesController::exclureInscrit
+    requirements:
+      id: '\d+'
+
+############################# Photos ##################
+
+index_albums:
+    path: /photos/albums
+    controller: App\Controller\PhotosController::indexAlbums
+
+view_album:
+    path: /photos/albums/{id}
+    controller: App\Controller\PhotosController::viewAlbum
+    requirements:
+      id: '\d+'
+
+del_photo:
+    path: /photos/supprimer/{id}
+    controller: App\Controller\PhotosController::delPhoto
+    requirements:
+      id: '\d+'
+
+gestion_photos:
+    path: /photos/gestion/{id}
+    controller: App\Controller\PhotosController::gestionPhotos
+    requirements:
+      id: '\d+'
+
+############################# Réunions ##################
+
+add_reunion:
+    path: /reunions/ajouter-une-reunion
+    controller: App\Controller\ReunionsController::addReunion
+
+index_reunions:
+    path: /reunions
+    controller: App\Controller\ReunionsController::indexReunion
+
+index_back_reunions:
+    path: /backoffice/reunions
+    controller: App\Controller\ReunionsController::indexBackReunion
+
+view_reunion:
+    path: /reunions/details/{id}
+    controller: App\Controller\ReunionsController::viewReunion
+    requirements:
+      id: '\d+'
+
+view_back_reunion:
+    path: backoffice/reunions/details/{id}
+    controller: App\Controller\ReunionsController::viewBackReunion
+    requirements:
+      id: '\d+' 
+
+edit_reunion:
+    path: /reunions/modifier-une-reunion/{id}
+    controller: App\Controller\ReunionsController::editReunion
+    requirements:
+      id: '\d+' 
+
+del_reunion:
+    path: /reunions/supprimer-une-reunion/{id}
+    controller: App\Controller\ReunionsController::delReunion
+    requirements:
+      id: '\d+'
+      
+del_conf:
+    path: /reunions/confirmation-suppression/{id}
+    controller: App\Controller\ReunionsController::delConf
+    requirements:
+      id: '\d+'
+
+
+    #### CR 
+
+add_cr:
+    path: /reunions/ajouter-un-cr/{id}
+    controller: App\Controller\ReunionsController::addCr
+    requirements:
+      id: '\d+'
+
+edit_cr:
+    path: /reunions/modifier-un-cr/{id}
+    controller: App\Controller\ReunionsController::editCr
+    requirements:
+      id: '\d+'
+
+index_cr:
+    path: /reunions/liste-cr
+    controller: App\Controller\ReunionsController::indexCr
+
+view_cr:
+    path: /reunions/cr-details/{id}
+    controller: App\Controller\ReunionsController::viewCr
+    requirements:
+      id: '\d+' 
+
+del_cr:
+    path: /reunions/supprimer-un-cr/{id}
+    controller: App\Controller\ReunionsController::delCr
+    requirements:
+      id: '\d+'

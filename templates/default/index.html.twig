@@ -1,0 +1,231 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Amicale BMW Moto 38
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/css/stylesaccueil.css" >
+{% endblock %}
+
+{% block content %}
+
+	<section class="py-2 mb-5">
+		<h2 class="pb-5 pt-5 bienvenue">Bienvenue</h2>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+					<div class="cardSwip">
+						<div class="sliderText">
+							<h3>Prochaine balade</h3>
+						</div>
+						<div class="content">
+							{% if nextbalade is not empty %}
+								<p>Partageons ensemble la prochaine balade ({{nextbalade.Titre}}), proposée par {{nextbalade.user.prenom ~ ' ' ~ nextbalade.user.nom }}.</p>
+								<p>RDV le {{nextbalade.DateDebut|date("d/m/Y")}}</p>
+								<p>Pour plus d'informations, c'est par là ! <a class="cadre" href="{{ path('view_balade', {id : nextbalade.Id}) }}">Voir la balade</a></p>
+							{% else %}
+								<p>Amicaliste, partagez vos idées pour de futures balades ! </p>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cardSwip">
+						<div class="sliderText bg-secondary">
+							<h3>Prochaine réunion</h3>
+						</div>
+						<div class="content">
+							{% if reunion is not empty %}
+								<p>{{reunion.Titre}}</p>
+								<p>La prochaine réunion se tiendra le {{reunion.datetimeReu|date("d/m/Y")}} (Type de réunion : {{reunion.typereu}}), proposée par {{reunion.user.prenom}} {{reunion.user.nom}} </p>
+								<p><a class="cadre" href="{{ path('view_reunion', {id : reunion.Id}) }}">+ d'informations</a></p>
+							{% else %}
+								<p>Nous vous communiquerons très vite la date de la prochaine réunion ! </p>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="cardSwip">
+						<div class="sliderText">
+							<h3>Dernière balade</h3>
+						</div>
+						<div class="content">
+							{% if lastbalade is not empty %}
+								<p>Retour sur notre dernière aventure ({{lastbalade.Titre}}) du {{lastbalade.DateDebut|date("d/m/Y")}}, amicalement proposée par {{lastbalade.user.prenom}} {{lastbalade.user.nom}}.</p>
+								<a class="cadre" href="{{ path('view_balade', {id : lastbalade.Id}) }}">Photos et plus</a>
+							{% else %}
+								<p>Nous vous raconterons bientôt nos aventures...</p>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- section bleue !-->
+	<section class="mb-5 blue">
+		<h2 class="pb-5">Qui sommes-nous ?</h2>
+		<p>Amicale de motards de l' Isère, notre objectif est de partager le plaisir de rouler dans un esprit de convivialité 
+		et de solidarité avec tous les passionnés de moto.</p>
+	</section>
+	<section class="py-5 mb-5">
+		{% if app.session.get('ranks') is  null %}
+			<div class="row">
+				<div class="col-md-6 py-3">
+					<div class="d-flex justify-content-center align-items-center h-100">
+						<a href="{{ path('inscription_user') }}" class="subscribe"><svg><rect></rect></svg>Inscrivez-vous</a>
+					</div>
+				</div>
+				<div class="col-md-6 py-3">
+					<div>
+						<p>Les bons comptes font les bons amis, c'est la raison pour laquelle vous devez créer le votre afin de rejoindre notre belle et grande famille, pour cela rien de plus simple il vous suffit de cliquer sur le joli bouton.</p>
+						<p>Si vous êtes déjà membre de cette Amicale, n'hésitez à vous créer un compte ou à vous connecter si vous en avez déjà un !  </p>
+					</div>
+				</div>
+			</div>
+		{% else %}
+			<div class="row">
+				<div class="col-md-12 py-3">
+					<div class="d-flex justify-content-center align-items-center h-100">
+						<div class="subscribe"><svg><rect></rect></svg>Prochainement</div></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 py-3 d-flex align-items-center justify-content-center text-center">
+					<p>Vous pourrez consulter ici l'itinéraire de la prochaine balade</p>
+				</div>
+				<div class="col-md-8 py-3 d-flex justify-content-center">
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.8222223636526!2d1.4120306157384406!3d43.56858736591556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebbc66a0644b1%3A0x92867b7cb6c0d89b!2s244%20Route%20de%20Seysses%2C%2031100%20Toulouse!5e0!3m2!1sfr!2sfr!4v1568884368621!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+			</div>
+		{% endif %}
+					
+	</section>
+	<section class="py-5 mb-5 parallax" >
+
+		<h2 class="text-white">Contactez nous</h2>
+
+	  	<div class="container">
+	    	<div class="card card-register mx-auto mt-5 pb-5 mb-5">
+        		<div class="card-body">
+        			<form method="post">
+            			<div class="form-group">
+            				<div class="form-row">
+                				<div class="col-md-6">
+                					<div class="form-group">
+                    					<label for="lastName">Nom</label>
+                    					<input type="text" id="lastName" name="lastname" class="form-control" value="{{donnees_saisies.lastname ?? ''}}" required>
+                					</div>
+                				</div>
+                				<div class="col-md-6">
+                  					<div class="form-group">
+                    					<label for="firstName">Prénom</label>
+                    					<input type="text" id="firstName" name="firstname" class="form-control" value="{{donnees_saisies.firstname ?? ''}}" required>
+                  					</div>
+                				</div>
+            				</div>
+            			</div>
+            			<div class="form-group">
+              				<div class="form-row">
+                				<div class="col-md-6">
+                					<div class="form-group">
+						                <label for="email">Adresse email</label>
+						                <input type="email" id="email" name="email" class="form-control" value="{{donnees_saisies.email ?? ''}}" required>
+                  					</div>
+                				</div>
+                				<div class="col-md-6">
+                  					<div class="form-group">
+					                    <label for="phone">Numéro de Téléphone</label>
+					                    <input type="text" id="phone" name="phone" class="form-control" value="{{donnees_saisies.phone ?? ''}}" maxlength="10" required>
+                					</div>
+                				</div>
+                				<div class="col-md-12">
+    	            				<div class="form-group">
+				    	                <label for="message">Message</label>
+				    	                <textarea name="message" id="message" class="form-control" required placeholder="Votre message ici" rows="5">{{donnees_saisies.message ?? ''}}</textarea>
+    	        					</div>
+            					</div>
+            				</div>
+            			</div>
+			            {% if errors is not empty %}
+			                <div class="alert alert-warning">
+			                    {{ errors|join('<br>')|raw }} 
+			                </div>
+			            {% elseif success == true %}
+			                <div class="alert alert-success">
+			                    Merci pour votre message <strong>{{donnees_saisies.firstname}}</strong> ! Nous l'avons bien reçu et le traiterons dans les plus brefs délais.
+			                </div>
+			            {% endif %}
+            			<div class="form-group">
+                			<input type="submit" class="btn btn-primary btn-block" value="Envoyer le message">
+            			</div>
+          			</form>
+        		</div>
+    		</div>
+    	</div>
+	</section>
+	<section class="py-5 mb-5">
+		<h2 class="pb-5">Portfolio</h2>
+		<div class="content ml-4 pr-4">
+			<div class="row">
+				<div class="col-md-4"> 
+					<figure>
+						<a href="{{ path('index_albums') }}">
+							<img src="/images/1568232400-trek-dans-le-piemont-sept-2016-067-44723713955-o.jpg" class="figure-img img-fluid rounded img-port h-auto">
+						</a>
+					</figure>
+				</div>
+				<div class="col-md-4"> 
+					<figure>
+						<a href="{{ path('index_albums') }}">
+							<img src="/images/1568232508-trek-dans-le-piemont-sept-2016-083-30696778987-o.jpg" class="figure-img img-fluid rounded img-port h-auto">
+						</a>
+					</figure>
+				</div>
+				<div class="col-md-4"> 
+					<figure>
+						<a href="{{ path('index_albums') }}">
+							<img src="/images/1568232514-trek-dans-le-piemont-sept-2016-084-30696845677-o.jpg" class="figure-img img-fluid rounded img-port h-auto">
+						</a>
+					</figure>
+				</div>
+				<div class="col-12"> 
+					<figure>
+						<a href="{{ path('index_albums') }}">
+							<img src="/images/35875846200_dff261cba6_k.jpg" class="figure-img img-fluid rounded img-port h-auto">
+						</a>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+	<script src="/js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+	      effect: 'coverflow',
+	      grabCursor: true,
+	      centeredSlides: true,
+	      slidesPerView: 'auto',
+	      coverflowEffect: {
+	        rotate: 30,
+	        stretch: 0,
+	        depth: 200,
+	        modifier: 1,
+	        slideShadows : true,
+	      },
+	      pagination: {
+	        el: '.swiper-pagination',
+	      },
+	    });
+	</script>
+
+{% endblock %}

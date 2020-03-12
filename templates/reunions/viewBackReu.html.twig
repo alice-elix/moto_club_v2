@@ -1,0 +1,63 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Détails d'une réunion{% endblock %}
+
+{% block content %}
+	<section class="py-2 mb-5">
+	    <div class="row ">
+			<div class="col-md-6">
+				<a href="{{ path('index_back_reunions') }}" class="btn btn-secondary m-2 float-left" role="button"><i class="fas fa-angle-left"></i> Gestion des réunions</a>
+			</div>
+			<div class="col-md-6">
+				<a href="{{ path('view_reunion', {id : reunionTrouvee.getId()}) }}" class="btn btn-info m-2 float-right" title="Voir la réunion sur le site" role="button"><i class="fas fa-globe-europe"></i></a>
+			</div> 
+		</div>
+			
+		<div class="row card-deck my-4">
+			<div class="col-md-12">
+				<div class="card mb-3">
+				    <div class="card-header">
+				    	<h2>{{ reunionTrouvee.getTitre() }}</h2>
+				    </div>
+			        <div class="card-title m-3">
+			        	<p class="mb-1">Le {{ reunionTrouvee.getDatetimeReu()|date("d/m/Y") }} à {{ reunionTrouvee.getDatetimeReu()|date("H:i") }} (<em>{{ reunionTrouvee.getTypeReu() }})</em>.</p>
+			        	<p>Lieu : {{ reunionTrouvee.getLieuReu() }}</p> 
+					</div>
+		  			<div class="card-body pt-1">
+		  				<p>Ordre du jour : {{ reunionTrouvee.getContenu()|nl2br }}</p>
+			  			<p><em>Proposé par : {{ reunionTrouvee.getUser().getPrenom() ?? '' }}, le {{reunionTrouvee.getDatetimePost()|date("d/m/Y")}}</em></p>        
+				    </div>	
+				    {% if crTrouve is not empty %}
+					    <div class="card-header">
+					    	<h3>Compte Rendu</h3>
+					    </div>
+					    <div class="card-body">
+				    		<p><b>{{ crTrouve.getTitre() }}</b></p>
+			            	<p>{{ crTrouve.getContenu()|nl2br }}</p>
+			           		<p>Publié le {{ crTrouve.getDatetimePost()|date("d/m/Y") }} à {{ crTrouve.getDatetimePost()|date("H:i") }}
+			              	{% if crTrouve.getDatetimeModif() is defined %}
+			       		 		,<em> modifié le {{ crTrouve.getDatetimeModif()|date("d/m/Y") }} à {{ crTrouve.getDatetimeModif()|date("H:i") }}</em> 
+			       			{% endif %}
+			       				<br> par {{ crTrouve.getUser().getPrenom() ?? '' }}.</p>	
+				        </div>
+				    {% endif %}   		              
+				</div>
+			</div>
+		</div>{#fin du deck#}
+		<div class="row ">
+			{% if bouton == false %}
+				<div class="col-md-12 d-flex justify-content-center">
+					{% if crTrouve is not empty  %}
+						<a href="{{ path('edit_cr', {id : reunionTrouvee.getId()}) }}" class="btn btn-primary m-2" role="button">Modifier le compte rendu</a>
+					{% else %}
+						<a href="{{ path('add_cr', {id : reunionTrouvee.getId()}) }}" class="btn btn-success m-2" role="button">Ajouter un  compte rendu</a>
+					{% endif %}
+				</div>
+			{% else %}
+				<div class="col-md-12 d-flex justify-content-center">
+					<a class="btn btn-primary m-2" href="{{ path('edit_reunion', {id : reunionTrouvee.getId()}) }}" role="button">Modifier la réunion</a>
+				</div>
+			{% endif %}
+		</div>
+	</section>
+{% endblock %}

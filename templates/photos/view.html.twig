@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Album - {{ balade.getTitre() }}{% endblock %}
+{% block stylesheets %}
+    <!-- Lien du CSS albums -->
+    <link rel="stylesheet" type="text/css" href="/css/stylesportfolio.css">
+ {% endblock %}
+
+
+{% block content %}
+<section class="py-2 mb-5">
+	<h2 class="py-3">Galerie</h2>
+	<div class="d-flex justify-content-between">
+		<span>
+			<a href="{{ path('index_albums') }}" class="btn btn-primary" role="button"><i class="fas fa-angle-left"></i> Retour aux albums</a>
+		</span>
+		<span>
+			{% if 'adherent' in app.session.get('ranks') %}
+				<a title="Gérer les photos" class="btn btn-secondary" href="{{ path('gestion_photos', {id: balade.getId()}) }}" role="button"><i class="fas fa-images"></i></a>
+			{% endif %}	
+			<a title="Afficher la balade" class="btn btn-primary" href="{{ path('view_balade', {id: balade.getId()}) }}" role="button"><i class="fas fa-road"></i></a>
+		</span>
+	</div>
+	<div id="content">
+	    <div class="row">
+	  		{% for ph in photos %}
+	            <div class="col-sm-6 col-md-4 col-lg-3">
+                	<a href="{{ '/' ~ uploadDir ~ ph.getFileName() }}" data-fancybox="images" data-caption="{{ ph.getLegende() }}">
+                    	<figure class="photo-fig">
+                            <img class="img-fluid" src="{{ '/' ~ uploadDir ~ ph.getFileName() }}">
+                    	</figure>
+                	</a>
+	            </div>                  
+	        {% endfor %} 
+	    </div>
+	</div>
+</section>
+{% endblock %}
+
+
+{% block javascripts %}
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<!-- <script src="test_francy.js"></script>-->
+{% endblock %}

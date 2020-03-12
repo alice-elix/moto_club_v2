@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Balades{% endblock %}
+
+{% block content %}
+	<section class="py-2 mb-5">
+		<h2 class="py-3">Balades</h2>
+		<div class="d-flex justify-content-between">
+			<span>
+			</span>
+			<span>
+				{% if 'bureau' in app.session.get('ranks') %}
+					<a title="Gérer les balades" class="btn btn-secondary" href="{{ path('gestion_balades') }}" role="button"><i class="fas fa-cogs"></i></a>
+				{% endif %}
+			</span>
+		</div>
+
+		{% for bal_data in bal_datas %}
+			<div class="card-deck my-4">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">
+							{% if bal_data.nb_photos > 0 %}
+								<a href="{{ path('view_album', {id: bal_data.balade.getId()}) }}" class="btn btn-primary float-right ml-2" role="button" title="Afficher la galerie ({{bal_data.nb_photos}})"><i class="fas fa-images"></i></a>
+							{% else %}
+								<a href="{{ path('view_album', {id: bal_data.balade.getId()}) }}" class="btn btn-primary disabled float-right ml-2" role="button" disabled><i class="fas fa-images"></i></a>
+							{% endif %}
+							<a title="Afficher la balade" href="{{ path('view_balade', {id: bal_data.balade.getId()}) }}" class="btn btn-primary float-right" role="button"><i class="far fa-eye"></i></a>
+							<strong>{{ bal_data.balade.getTitre() }}</strong>
+							{% if bal_data.balade.getDateDebut() == bal_data.balade.getDateFin() %}
+								<div>le {{ bal_data.balade.getDateDebut()|date('d/m/Y') }}</div>
+							{% else %}
+								<div>du {{ bal_data.balade.getDateDebut()|date('d/m/Y') }} au {{ bal_data.balade.getDateFin()|date('d/m/Y') }}</div>
+							{% endif %}
+					   </div>
+						<div class="card-footer small text-muted mb-2">Proposé par {{ bal_data.balade.getUser().getPrenom() ~ ' ' ~ bal_data.balade.getUser().getNom() }}, le {{ bal_data.balade.getDatetimePost()|date('d/m/Y') }} à {{ bal_data.balade.getDatetimePost()|date('H:i') }}
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</section>
+
+{% endblock %}

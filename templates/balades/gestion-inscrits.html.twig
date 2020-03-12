@@ -1,0 +1,74 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Gestion Balades{% endblock %}
+
+{% block content %}
+
+	<section class="py-2 mb-5 container">
+		<div class="d-flex justify-content-between">
+			<span>
+				<a href="{{ path('gestion_balades') }}" class="btn btn-secondary" role="button"><i class="fas fa-angle-left"></i> Retour</a>
+			</span>
+			<span>
+			</span>
+		</div>	
+		<div class="card-deck my-4">
+			<div class="card">
+				<div class="card-header">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Liste des inscrits</span>
+						<span>
+							<a title="Afficher la balade" class="btn btn-info" href="{{ path('view_balade', {id: balade.getId() }) }}" role="button"><i class="fas fa-globe-europe"></i></a>
+						</span>
+					</div>
+					
+				</div>
+				<div class="card-body">
+					<div class="scrolling-table">
+						<table class="admin-table-mg">
+							<thead>
+								<th>#</th>
+								<th class="text-left">Participant</th>
+								<th>Actions</th>
+							</thead>
+							
+							<tbody>
+						      	{% for inscrit in inscrits %}
+									<tr>
+										<td class="text-center">
+										    {% set i = ( i | default(0) ) + 1 %}{{i}}
+										</td>
+										<td>
+											<div class="title font-weight-bold">{{ inscrit.getUser().getPrenom() ~ ' ' ~ inscrit.getUser().getNom() }}</div>
+											<div class="font-italic">{{ nomsRanks[inscrit.getUser().getAcces()] }}</div>
+										</td>
+										<td class="d-flex justify-content-center align-items-center flex-nowrap">
+											<span>
+												<div>
+
+													{% if inscrit.getUser().getAcces != 'admin' %}
+														<a 	title="Exclure le participant" 
+															class="btn btn-danger" 
+															href="{{ path('exclure_inscrit', {id: inscrit.getId()}) }}" 
+															role="button" 
+															data-toggle="modal" 
+															data-target="#modalDelete"
+															data-content="Vous êtes sur le point d'exclure <strong>{{inscrit.getUser().getPrenom()}} {{inscrit.getUser().getNom()}}</strong> de la balade <strong>{{ balade.getTitre() }}</strong> de manière irréversible. Êtes-vous sûr(e) de vouloir continuer ?">
+															<i class="fas fa-times"></i>
+														</a>
+													{% endif %}
+												</div>
+											</span>
+										</td>
+									</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+			      	
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
