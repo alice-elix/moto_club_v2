@@ -68,6 +68,7 @@ class DefaultController extends MasterController
 
         
         return $this->render('default/index.html.twig', [
+            'page_name'         =>"Bienvenue",
             'errors'            => $errors ?? [],
             'donnees_saisies'   => $safe ?? [],
             'success'           => $success ?? false,

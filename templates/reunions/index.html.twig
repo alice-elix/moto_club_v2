@@ -7,10 +7,12 @@
 {% block content %}
     
 	<section class="py-2 mb-5">
-	<h2 class="py-3">Réunions </h2>
-	<div class="d-flex justify-content-end">
-		<a title="Gestion des réunions"href="{{ path('index_back_reunions') }}" class="btn btn-secondary mt-4 " role="button"><i class="fas fa-cogs"></i> </a>
-	</div>
+	<h2 class="py-3">{{page_name}} </h2>
+	{% if 'bureau' in app.session.get('ranks') %}
+		<div class="d-flex justify-content-end">
+			<a title="Gestion des réunions"href="{{ path('index_back_reunions') }}" class="btn btn-secondary mt-4 " role="button"><i class="fas fa-cogs"></i> </a>
+		</div>
+	{% endif %}
 		<h3>Réunions à venir</h3>
 		{% for reuNonPassee in reusNonPassees %}
 			<div class="card-deck my-4">

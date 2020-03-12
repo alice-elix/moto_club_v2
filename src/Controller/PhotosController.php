@@ -39,9 +39,10 @@ class PhotosController extends MasterController
                 $albums[] = $firstPhotoDeChaqueBalade;
             }
         }
-
+        
         return $this->render('photos/index.html.twig', [
-            'albums' => $albums,
+            'page_name' =>"Albums",
+            'albums'    => $albums,
             'uploadDir' => $this->uploadDir,
         ]);
     }

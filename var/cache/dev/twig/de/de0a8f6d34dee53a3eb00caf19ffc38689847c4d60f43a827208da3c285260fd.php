@@ -60,114 +60,135 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
      \t<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
 \t\t<!-- fancybox -->
 \t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css\"/>
+\t\t<!-- animation -->
+\t\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css\">
+\t\t<!-- swiper -->
 \t\t<link rel=\"stylesheet\" href=\"/css/swiper.min.css\">
+\t\t<!-- styles perso -->
 \t\t<link rel=\"stylesheet\" href=\"/css/styles.css\">
-\t\t
 \t\t<link rel=\"stylesheet\" href=\"/css/avatars.css\" >
 \t\t<link rel=\"icon\" href=\"/images/logo.jpg\" />
 
         ";
-        // line 20
+        // line 23
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 21
+        // line 24
         echo "    </head>
 
     <body>
 \t\t<div id=\"top-content\">
-\t\t\t<header>
-\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"";
-        // line 26
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
-        echo "\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a> -->
-\t\t\t\t\t<div class=\"logo-div\">
-\t\t\t\t\t\t<figure class=\"logo\">
-\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
-\t\t\t\t\t\t</figure>
-\t\t\t\t\t</div>
-\t\t\t\t\t<h1 class=\"justify-content-center d-flex text-uppercase mx-auto name-asso\">Amicale BMW Moto 38</h1>
-\t\t\t</header>
-\t\t\t
-\t\t\t<nav class=\"navbar sticky-top navbar-expand-lg navbar-light py-0 \">\t\t\t
+\t\t\t<nav class=\"navbar sticky-top navbar-expand-lg navbar-light py-0 nav-perso \">\t\t\t
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t\t\t\t<span class=\"navbar-toggler-icon\"></span>
 \t\t\t\t</button>
 
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
 \t\t\t\t\t<ul class=\"navbar-nav mr-lg-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"";
-        // line 42
+\t\t\t\t\t\t<li class=\"nav-item ";
+        // line 35
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 35, $this->source); })()) == "Bienvenue"))) {
+            echo "active";
+        }
+        echo "\"><a class=\"nav-link nav-perso \" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
         echo "\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"";
-        // line 43
+\t\t\t\t\t\t<li class=\"nav-item ";
+        // line 36
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 36, $this->source); })()) == "Balades"))) {
+            echo "active";
+        }
+        echo "\"><a class=\"nav-link nav-perso\" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_balades");
         echo "\">Balades</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"";
-        // line 44
+\t\t\t\t\t\t<li class=\"nav-item ";
+        // line 37
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 37, $this->source); })()) == "Albums"))) {
+            echo "active";
+        }
+        echo "\"><a class=\"nav-link nav-perso\" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_albums");
         echo "\">Albums</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"";
-        // line 45
+\t\t\t\t\t\t<li class=\"nav-item ";
+        // line 38
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 38, $this->source); })()) == "Réunions"))) {
+            echo "active";
+        }
+        echo "\"><a class=\"nav-link nav-perso\" href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_reunions");
         echo "\">Réunions</a></li>\t\t\t\t
 \t\t\t\t\t\t";
-        // line 47
+        // line 40
         echo "\t\t\t\t\t\t";
-        // line 48
+        // line 41
         echo "\t\t\t\t\t</ul>
 \t\t\t\t\t<ul class=\"navbar-nav ml-lg-auto perso-nav-btn d-flex justify-content-end\">
 \t\t\t\t\t\t";
-        // line 50
-        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "session", [], "any", false, false, false, 50), "get", [0 => "ranks"], "method", false, false, false, 50))) {
-            // line 51
+        // line 43
+        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 43, $this->source); })()), "session", [], "any", false, false, false, 43), "get", [0 => "ranks"], "method", false, false, false, 43))) {
+            // line 44
             echo "
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a title=\"Déconnexion\" class=\"nav-link btn-link-red btn btn-outline-danger\" href=\"";
-            // line 53
+            // line 46
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deconnexion_user");
             echo "\"><i class=\"fas fa-power-off\"></i></a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1\">
 \t\t\t\t\t\t\t\t<a class=\"nav-link btn-link-grey btn btn-outline-secondary\" href=\"";
-            // line 56
+            // line 49
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_accueil");
             echo "\"><i class=\"fas fa-user-edit\"></i> ";
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 56, $this->source); })()), "session", [], "any", false, false, false, 56), "get", [0 => "prenom"], "method", false, false, false, 56) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 56, $this->source); })()), "session", [], "any", false, false, false, 56), "get", [0 => "nom"], "method", false, false, false, 56)), "html", null, true);
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "session", [], "any", false, false, false, 49), "get", [0 => "prenom"], "method", false, false, false, 49) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "session", [], "any", false, false, false, 49), "get", [0 => "nom"], "method", false, false, false, 49)), "html", null, true);
             echo "</a>
 \t\t\t\t\t\t\t</li>
 
 \t\t\t\t\t\t";
         } else {
-            // line 60
+            // line 53
             echo "
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a title=\"Connexion\" class=\"nav-link btn-link-green btn btn-outline-success \" href=\"";
-            // line 62
+            // line 55
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("connexion_user");
             echo "\"><i class=\"fas fa-power-off\"></i></a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
 \t\t\t\t\t\t\t\t<a class=\"nav-link btn-outline-secondary btn btn-link-grey\" href=\"";
-            // line 65
+            // line 58
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("inscription_user");
             echo "\">Inscription</a>
 \t\t\t\t\t\t\t</li>
 
 \t\t\t\t\t\t";
         }
-        // line 69
+        // line 62
         echo "
 \t\t\t\t\t</ul>
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t</nav>
-
+\t\t\t<header>
+\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"";
+        // line 68
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
+        echo "\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a>
+\t\t\t\t\t<div class=\"logo-div\">
+\t\t\t\t\t\t<figure class=\"logo\">
+\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
+\t\t\t\t\t\t</figure>
+\t\t\t\t\t</div> -->
+\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase mx-auto name-asso\">Amicale BMW Moto 38</h1>
+\t\t\t</header>
+\t\t\t
 \t\t\t<main class=\"px-0\">
 \t\t\t\t<div class=\"container\">
+\t\t\t\t\t<div class=\"row d-flex justify-content-center\">
+\t\t\t\t\t\t<img class=\"animated infinite bounce\" src=\"https://img.icons8.com/ios-filled/50/000000/expand-arrow.png\"/>\t\t\t\t\t
+\t\t\t\t\t</div>
 \t\t\t\t\t";
-        // line 77
+        // line 82
         $this->displayBlock('content', $context, $blocks);
-        // line 78
+        // line 83
         echo "\t\t\t\t</div>
 \t\t\t</main>
 \t\t</div>
@@ -175,21 +196,22 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t<footer class=\"base-footer footer px-5 h-auto\"> <!-- fixed-bottom -->
 \t\t\t<div class=\"row\">\t\t\t
 \t\t\t\t<div class=\"col-md-4 align-middle my-auto\"><a href =\"";
-        // line 84
+        // line 89
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("confidentialite");
         echo "\" class=\"colorlink footerlink\">Politique de confidentialité</a></div>
 \t\t\t\t<div class=\"col-md-4 text-center align-middle copyright my-auto \">GSM3 Copyright &copy; - ";
-        // line 85
+        // line 90
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</div>
 \t\t\t\t<div class=\"col-md-4 align-middle text-right my-auto\"><a href=\"https://www.flickr.com/photos/136404712@N02/albums\" target=\"blank\" class=\"colorlink footerlink\">Site photo de l'Amicale</a></div>
 \t\t\t</div>  
 \t\t</footer>
 
-\t\t// <script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>
+\t\t<script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>
 \t\t<!-- // <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"></script> -->
 \t\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
 \t\t<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
+\t\t<!-- fancybox -->
 \t\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js\"></script>
 
 \t\t<!-- // <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js\"></script> -->
@@ -200,9 +222,9 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
 \t\t
         ";
-        // line 103
+        // line 109
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 104
+        // line 110
         echo "
     </body>
 </html>
@@ -234,7 +256,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     }
 
-    // line 20
+    // line 23
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -252,7 +274,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     }
 
-    // line 77
+    // line 82
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -270,7 +292,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     }
 
-    // line 103
+    // line 109
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -300,7 +322,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     public function getDebugInfo()
     {
-        return array (  274 => 103,  256 => 77,  238 => 20,  219 => 5,  206 => 104,  204 => 103,  183 => 85,  179 => 84,  171 => 78,  169 => 77,  159 => 69,  152 => 65,  146 => 62,  142 => 60,  133 => 56,  127 => 53,  123 => 51,  121 => 50,  117 => 48,  115 => 47,  111 => 45,  107 => 44,  103 => 43,  99 => 42,  80 => 26,  73 => 21,  71 => 20,  53 => 5,  47 => 1,);
+        return array (  296 => 109,  278 => 82,  260 => 23,  241 => 5,  228 => 110,  226 => 109,  204 => 90,  200 => 89,  192 => 83,  190 => 82,  173 => 68,  165 => 62,  158 => 58,  152 => 55,  148 => 53,  139 => 49,  133 => 46,  129 => 44,  127 => 43,  123 => 41,  121 => 40,  113 => 38,  105 => 37,  97 => 36,  89 => 35,  76 => 24,  74 => 23,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -318,9 +340,12 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
      \t<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">
 \t\t<!-- fancybox -->
 \t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css\"/>
+\t\t<!-- animation -->
+\t\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css\">
+\t\t<!-- swiper -->
 \t\t<link rel=\"stylesheet\" href=\"/css/swiper.min.css\">
+\t\t<!-- styles perso -->
 \t\t<link rel=\"stylesheet\" href=\"/css/styles.css\">
-\t\t
 \t\t<link rel=\"stylesheet\" href=\"/css/avatars.css\" >
 \t\t<link rel=\"icon\" href=\"/images/logo.jpg\" />
 
@@ -329,27 +354,17 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     <body>
 \t\t<div id=\"top-content\">
-\t\t\t<header>
-\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"{{ path('accueil') }}\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a> -->
-\t\t\t\t\t<div class=\"logo-div\">
-\t\t\t\t\t\t<figure class=\"logo\">
-\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
-\t\t\t\t\t\t</figure>
-\t\t\t\t\t</div>
-\t\t\t\t\t<h1 class=\"justify-content-center d-flex text-uppercase mx-auto name-asso\">Amicale BMW Moto 38</h1>
-\t\t\t</header>
-\t\t\t
-\t\t\t<nav class=\"navbar sticky-top navbar-expand-lg navbar-light py-0 \">\t\t\t
+\t\t\t<nav class=\"navbar sticky-top navbar-expand-lg navbar-light py-0 nav-perso \">\t\t\t
 \t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
 \t\t\t\t\t<span class=\"navbar-toggler-icon\"></span>
 \t\t\t\t</button>
 
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
 \t\t\t\t\t<ul class=\"navbar-nav mr-lg-auto\">
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"{{ path('accueil') }}\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_balades') }}\">Balades</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_albums') }}\">Albums</a></li>
-\t\t\t\t\t\t<li class=\"nav-item\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_reunions') }}\">Réunions</a></li>\t\t\t\t
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Bienvenue' %}active{%endif%}\"><a class=\"nav-link nav-perso \" href=\"{{ path('accueil') }}\">Accueil</a></li>
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Balades' %}active{%endif%}\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_balades') }}\">Balades</a></li>
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Albums' %}active{%endif%}\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_albums') }}\">Albums</a></li>
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Réunions' %}active{%endif%}\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_reunions') }}\">Réunions</a></li>\t\t\t\t
 \t\t\t\t\t\t{#{% if 'bureau' in app.session.get('ranks') %}#}
 \t\t\t\t\t\t{#{% endif %}#}
 \t\t\t\t\t</ul>
@@ -378,9 +393,21 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t</nav>
-
+\t\t\t<header>
+\t\t\t\t<!-- <a class=\"d-flex align-items-center justify-content-center\" href=\"{{ path('accueil') }}\"><img src=\"/images/logo.png\" class=\"img-fluid h-auto img-logo\" style=\"width: 3em;\"></a>
+\t\t\t\t\t<div class=\"logo-div\">
+\t\t\t\t\t\t<figure class=\"logo\">
+\t\t\t\t\t\t\t<img src=\"/images/logo.jpg\" alt=\"logo\">
+\t\t\t\t\t\t</figure>
+\t\t\t\t\t</div> -->
+\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase mx-auto name-asso\">Amicale BMW Moto 38</h1>
+\t\t\t</header>
+\t\t\t
 \t\t\t<main class=\"px-0\">
 \t\t\t\t<div class=\"container\">
+\t\t\t\t\t<div class=\"row d-flex justify-content-center\">
+\t\t\t\t\t\t<img class=\"animated infinite bounce\" src=\"https://img.icons8.com/ios-filled/50/000000/expand-arrow.png\"/>\t\t\t\t\t
+\t\t\t\t\t</div>
 \t\t\t\t\t{% block content %}{% endblock %}
 \t\t\t\t</div>
 \t\t\t</main>
@@ -394,10 +421,11 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t\t</div>  
 \t\t</footer>
 
-\t\t// <script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>
+\t\t<script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>
 \t\t<!-- // <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"></script> -->
 \t\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>
 \t\t<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>
+\t\t<!-- fancybox -->
 \t\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js\"></script>
 
 \t\t<!-- // <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js\"></script> -->
@@ -411,6 +439,6 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     </body>
 </html>
-", "base.html.twig", "C:\\xampp\\htdocs\\moto_club_v2\\templates\\base.html.twig");
+", "base.html.twig", "C:\\xampp\\htdocs\\moto_club_v2\\moto_club_v2\\templates\\base.html.twig");
     }
 }

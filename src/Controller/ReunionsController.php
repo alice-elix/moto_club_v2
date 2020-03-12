@@ -55,6 +55,7 @@ class ReunionsController extends MasterController
         }
 
         return $this->render('reunions/index.html.twig', [
+            'page_name'        =>"Réunions",
             'reunionsPassees'  => $reuPass, 
             'reusNonPassees'   => $reuNotPass,
             'reusSansCr'       => $reuWithoutCr,

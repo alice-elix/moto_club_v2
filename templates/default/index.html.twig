@@ -11,15 +11,17 @@
 {% block content %}
 
 	<section class="py-2 mb-5">
-		<h2 class="pb-5 pt-5 bienvenue">Bienvenue</h2>
-		<div class="swiper-container">
-		    <div class="swiper-wrapper">
-		        <div class="swiper-slide">
-					<div class="cardSwip">
-						<div class="sliderText">
+		<h2 class="pb-5 pt-5 bienvenue">{{page_name}}</h2>
+		<div class="container " >
+		<h3 class="pb-5">Qui sommes-nous ?</h3>
+			<p class="pb-5">Amicale de motards de l'Isère, notre objectif est de partager le plaisir de rouler dans un esprit de convivialité et de solidarité avec tous les passionnés de moto.</p>
+			<div class="row justify-content-center" >
+				<div class="col-3">
+					<div class="card h-100">
+						<div class="card-title jumbotron">
 							<h3>Prochaine balade</h3>
 						</div>
-						<div class="content">
+						<div class="card-text mx-1">
 							{% if nextbalade is not empty %}
 								<p>Partageons ensemble la prochaine balade ({{nextbalade.Titre}}), proposée par {{nextbalade.user.prenom ~ ' ' ~ nextbalade.user.nom }}.</p>
 								<p>RDV le {{nextbalade.DateDebut|date("d/m/Y")}}</p>
@@ -30,12 +32,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="cardSwip">
-						<div class="sliderText bg-secondary">
-							<h3>Prochaine réunion</h3>
+				<div class="col-3">
+					<div class="card h-100">
+						<div class="card-title jumbotron">
+							<h3>Prochaine réunion</h3>							
 						</div>
-						<div class="content">
+						<div class="card-text mx-1">
 							{% if reunion is not empty %}
 								<p>{{reunion.Titre}}</p>
 								<p>La prochaine réunion se tiendra le {{reunion.datetimeReu|date("d/m/Y")}} (Type de réunion : {{reunion.typereu}}), proposée par {{reunion.user.prenom}} {{reunion.user.nom}} </p>
@@ -46,12 +48,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="cardSwip">
-						<div class="sliderText">
+				<div class="col-3 ">
+					<div class="card h-100">
+						<div class="card-title jumbotron">
 							<h3>Dernière balade</h3>
+							
 						</div>
-						<div class="content">
+						<div class="card-text mx-1">
 							{% if lastbalade is not empty %}
 								<p>Retour sur notre dernière aventure ({{lastbalade.Titre}}) du {{lastbalade.DateDebut|date("d/m/Y")}}, amicalement proposée par {{lastbalade.user.prenom}} {{lastbalade.user.nom}}.</p>
 								<a class="cadre" href="{{ path('view_balade', {id : lastbalade.Id}) }}">Photos et plus</a>
@@ -60,28 +63,17 @@
 							{% endif %}
 						</div>
 					</div>
-				</div>
+				</div>				
 			</div>
 		</div>
 	</section>
 	<!-- section bleue !-->
-	<section class="mb-5 blue">
-		<h2 class="pb-5">Qui sommes-nous ?</h2>
-		<p>Amicale de motards de l' Isère, notre objectif est de partager le plaisir de rouler dans un esprit de convivialité 
-		et de solidarité avec tous les passionnés de moto.</p>
-	</section>
 	<section class="py-5 mb-5">
 		{% if app.session.get('ranks') is  null %}
 			<div class="row">
-				<div class="col-md-6 py-3">
+				<div class="col align-self-center py-3">
 					<div class="d-flex justify-content-center align-items-center h-100">
-						<a href="{{ path('inscription_user') }}" class="subscribe"><svg><rect></rect></svg>Inscrivez-vous</a>
-					</div>
-				</div>
-				<div class="col-md-6 py-3">
-					<div>
-						<p>Les bons comptes font les bons amis, c'est la raison pour laquelle vous devez créer le votre afin de rejoindre notre belle et grande famille, pour cela rien de plus simple il vous suffit de cliquer sur le joli bouton.</p>
-						<p>Si vous êtes déjà membre de cette Amicale, n'hésitez à vous créer un compte ou à vous connecter si vous en avez déjà un !  </p>
+						<a href="{{ path('inscription_user') }}" class="subscribe d-flex justify-content-center align-items-center"><svg><rect></rect></svg>En cliquant ici, vous pouvez vous inscrire !! </a>
 					</div>
 				</div>
 			</div>
@@ -89,7 +81,7 @@
 			<div class="row">
 				<div class="col-md-12 py-3">
 					<div class="d-flex justify-content-center align-items-center h-100">
-						<div class="subscribe"><svg><rect></rect></svg>Prochainement</div></a>
+						<div class="subscribe d-flex justify-content-center align-items-center"><svg><rect></rect></svg>Prochainement</div></a>
 					</div>
 				</div>
 			</div>
@@ -105,14 +97,14 @@
 					
 	</section>
 	<section class="py-5 mb-5 parallax" >
-
-		<h2 class="text-white">Contactez nous</h2>
-
 	  	<div class="container">
-	    	<div class="card card-register mx-auto mt-5 pb-5 mb-5">
+	    	<div class="card card-register mx-auto mt-5 pb-5 mb-5 form-perso">
         		<div class="card-body">
         			<form method="post">
             			<div class="form-group">
+            				<div class="form-row">
+								<h3 class="pb-3">Contactez nous</h3>	
+            				</div>
             				<div class="form-row">
                 				<div class="col-md-6">
                 					<div class="form-group">

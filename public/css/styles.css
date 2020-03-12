@@ -8,6 +8,7 @@ html {
   	box-sizing: border-box;
 	height:100%;
   	width: 100%;
+  	font-family: 'arial', sans-serif;
 }
 
 body{
@@ -20,8 +21,8 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 
-	background-color:#6c757d3d;
-	font-family: 'Poppins';
+	background-color:#fff;
+	font-family: 'arial';
 	
 	padding: 0;
 	margin:0;
@@ -30,8 +31,8 @@ body{
 header{
 	padding: 0;
 	/*box-sizing: border-box;*/
-	background: url(../images/img1.jpg);
-	height: 15em;
+	background: url(../images/img3.jpg);
+	height: 87vh;
 	background-size: cover;
 }
 
@@ -48,14 +49,6 @@ main > .container {
 	background-color:#ffffff33;
 }
 
-footer{
-	background-color: #2e7ff0;
-	/*46, 127, 240*/
-	position: relative;
-	height: 1.8em;
-	width: 100%;
-	padding: .8em;
-}
 
 /* COMMON CLASSES*/
 
@@ -64,25 +57,26 @@ section {
 	padding-right: 1em;
 }
 h1{
-	font-family: 'Philosopher', sans-serif;
-	color: #fff;
-	text-shadow: 1px 5px 5px #000;
+	color: #000;
+	text-shadow: 1px 5px 5px #fff;
 }
+
+.hidden{
+	display: none;
  /********************************* header *************************/
+}
 
 .name-asso {
 	font-size: 2.5em;
 	padding-top: 1em;
 }
 
-@media screen and (){
+/*@media screen and (){
 	.name-asso{
 		font-size: 1.5em;
 		padding-top: 0.5em;
 	}
-
-
-}
+}*/
 
 .logo-div {
 	padding-top: 1em;
@@ -120,9 +114,13 @@ nav ul li a.active{
 	background: #fff;
 }
 
+.nav-perso{
+	background: #1c69d4;
+}
+
 .navbar-light .navbar-nav .nav-item .nav-perso:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-perso {
-	background: #2e7ff0;
+	background: #1c69d4;
 	color: #fff;
 }
 
@@ -163,44 +161,16 @@ nav ul li a.active{
 }
 
 
-/********** footer ********/
-
-.colorlink{
-	color: black;
-}
-
-.footerlink{
-	color: black;
-}
-
-.footerlink:hover{
-	color: white;
-	text-decoration: none;
-}
 
 /****************************************** Contenu des pages ******************************************************/
 
 h2{
 	text-transform: uppercase;
-	font-family: 'Alfa Slab One', cursive;
-	color: #009ada;
+	color: #000;
+	text-shadow: 1px 5px 5px #fff;
 	font-weight: 400;
 	letter-spacing: 4px;
 	font-size: 5em;
-	text-shadow: 1px 1px 1px #91d3ff,
-	1px 2px 1px #91d3ff,
-	1px 3px 1px #91d3ff,
-	1px 4px 1px #91d3ff,
-	1px 5px 1px #91d3ff,
-	1px 6px 1px #91d3ff,
-	1px 7px 1px #91d3ff,
-	1px 8px 1px #91d3ff,
-	1px 9px 1px #91d3ff,
-	1px 10px 1px #91d3ff,
-	1px 18px 6px rgba(16,16,16,0.4),
-	1px 22px 10px rgba(16,16,16,0.2),
-	1px 25px 35px rgba(16,16,16,0.2),
-	1px 30px 60px rgba(16,16,16,0.4);
 	transform: 0.8s all;
 	text-align: center;
 }
@@ -208,104 +178,24 @@ h2{
 .policy {
 	font-size: 2.5em;
 }
-/*.bienvenue{
-	background: url(../images/moto.png);
-	background-position: top left 15%; 
-	background-size: 30%;
-	background-repeat: no-repeat;
 
-}*/
+/******* intro *********/
 
-/********************* swiper *****************/
 
-.cardSwip{
-	position: relative;
-	background: #fff;
-	width: 400px;
-	height: 500px;
-	margin: 0 auto;
-	border: 1px solid #000;
-	border-radius: 10px;
-}
 
-.cardSwip .content{
-	width: 400px;
-	padding: 30px;
-	box-sizing: border-box;
-}
-
-.cardSwip .content a{
-	display: inline-block;
-	margin: 10px 0 0;
-	padding: 10px 20px;
-	text-decoration: none;
-	border: 2px solid #262626;
-	color: #262626;
-	font-weight: 600;
-}
-
-.cardSwip .sliderText{
-	position: relative;
-	width: 100%;
-	height: 200px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 10px 10px 0 0;
-	background: #000;
-	text-align: center;
-}
-
-.cardSwip .sliderText h3{
-	color: #fff;
-	font-size: 3em;
-}
-
-.swiper-slide{
-	width: 400px;
-}
-
-.swiper-slide .sliderText{
-	background: #2196f3;
-}
-
-.text1{
-	font-size:2em;
-	border-radius: 10px;
-	/*background-color: rgba(46, 127, 240, 0.3);
-	box-shadow: 1px 5px 5px #2e7ff0;*/
-	width: 100%;
-	height: 100%;
-	margin: auto;
-}
-
-/*************** qui sommes-nous *****************/
-
-.blue {/*
-	background-color: #2e7ff0;*/
-	background: linear-gradient(transparent, #2e7ff0, transparent);
-	padding: 6em 1em;
-}
-
-/********************** PAC et MAP *****************************/
+/********************** PAC et map *****************************/
 
 .subscribe{
 	position: relative;
-	/*left: 50%;
-	transform: translate(-50%, -50%);*/
-	width: 250px;
-	height: 70px;
+	width: 65vw;
+	height: 15vh;
 	line-height: 70px;
 	text-align: center;
-	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 50px;
 	color: #009ada;
-	display: inline-block;
 	text-decoration: none;
 	background: linear-gradient(to right, #acb6e5, #86fde8);
-	box-shadow: 1px 5px 5px #acb6e5;
-	/*background: 	linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            		linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);*/         	
+	box-shadow: 1px 5px 5px #acb6e5;	         	
 }
 
 .subscribe:hover{
@@ -321,6 +211,7 @@ h2{
 	height: 100%;
 	fill: transparent;
 }
+
 .subscribe svg rect{
 	stroke: #32547d;
 	stroke-width: 4;
@@ -328,6 +219,7 @@ h2{
 	stroke-dasharray: 70 250;
 	stroke-dashoffset: 390;
 }
+
 .subscribe:hover svg rect{
 	stroke: #2eca94;
 	stroke-dasharray: 250 70;
@@ -344,6 +236,9 @@ h2{
 	background: url(../images/img2.jpg);
 	background-attachment: fixed;
 	background-size: cover;
+}
+.form-perso{
+	background-color: rgba(255,255,255,0.75);
 }
 
 /********************** portfolio ************************/
@@ -378,16 +273,37 @@ h2{
 @media screen and (max-width: 360px){
 	.name-asso{
 		font-size: 1.5em;
-		
+	
 	}
 		h2 {
 		font-size : 2em;
 	}
-
 	.policy {
 		font-size: 1.5em;
-	}
-	
+	}	
+}
+/********** footer ********/
+
+footer{
+	background-color:#1c69d4;
+	/*46, 127, 240*/
+	position: relative;
+	height: 1.8em;
+	width: 100%;
+	padding: .8em;
+}
+
+.colorlink{
+	color: black;
+}
+
+.footerlink{
+	color: black;
+}
+
+.footerlink:hover{
+	color: white;
+	text-decoration: none;
 }
 	
 

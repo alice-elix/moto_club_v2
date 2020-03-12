@@ -41,6 +41,7 @@ class BaladesController extends MasterController
         }
 
         return $this->render('balades/index.html.twig', [
+            'page_name' =>"Balades",
             'bal_datas' => $bal_datas ?? [],
         ]);
     }
@@ -151,9 +152,9 @@ class BaladesController extends MasterController
         }
 
     	return $this->render('balades/add.html.twig', [
-            'post' => $post ?? [],
-            'errors' => $errors ?? '',
-            'success' => $success ?? false,
+            'post'      => $post ?? [],
+            'errors'    => $errors ?? '',
+            'success'   => $success ?? false,
         ]);
     }
 
