@@ -1,6 +1,6 @@
 # SUITE DU PROJET moto_club -- EN COURS
 *Dev avec Symfony*
-*Pour amélioration du CSS + optimisation du code + passage en sf 5*
+*Pour amélioration du CSS + optimisation du code + passage en sf 5 possible*
 
 
 
