@@ -103,97 +103,103 @@ class __TwigTemplate_af4582775920df2ddd352ac1b59b759d57f7589069a8df15998336403fa
                 echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit_cr", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 12, $this->source); })()), "getId", [], "method", false, false, false, 12)]), "html", null, true);
                 echo "\" class=\"btn btn-secondary mt-4\" role=\"button\">Modifier CR</a>
 \t\t\t\t";
+            } else {
+                // line 14
+                echo "\t\t\t\t\t<a href=\"";
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_cr", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 14, $this->source); })()), "getId", [], "method", false, false, false, 14)]), "html", null, true);
+                echo "\" class=\"btn btn-secondary mt-4\" role=\"button\">Ajouter CR</a>
+\t\t\t\t";
             }
-            // line 14
+            // line 16
             echo "\t\t\t\t<a title=\"Gestion de cette réunion\"href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_back_reunion", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 14, $this->source); })()), "getId", [], "method", false, false, false, 14)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_back_reunion", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 16, $this->source); })()), "getId", [], "method", false, false, false, 16)]), "html", null, true);
             echo "\" class=\"btn btn-secondary mt-4 \" role=\"button\"><i class=\"fas fa-cogs\"></i> </a> 
 \t\t\t";
         } else {
-            // line 16
+            // line 18
             echo "\t\t\t\t<a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_reunions");
             echo "\" class=\"btn btn-secondary mt-4\" role=\"button\"><i class=\"fas fa-angle-left\"></i> Retour aux réunions</a>
 \t\t\t";
         }
-        // line 18
+        // line 20
         echo "\t\t</div>
 \t\t<div class=\"card-deck my-4\">
 \t\t\t<div class=\"card mb-3\">
 \t\t\t    <div class=\"card-header\">
 \t\t\t    \t<h3><b>";
-        // line 22
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 22, $this->source); })()), "getTitre", [], "method", false, false, false, 22), "html", null, true);
+        // line 24
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 24, $this->source); })()), "getTitre", [], "method", false, false, false, 24), "html", null, true);
         echo "</b></h3>
 \t\t\t    </div>
 \t\t        <div class=\"card-title m-3\">
 \t\t        \t<p>Le ";
-        // line 25
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 25, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 25), "d/m/Y"), "html", null, true);
+        // line 27
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 27, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 27), "d/m/Y"), "html", null, true);
         echo " à ";
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 25, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 25), "H:i"), "html", null, true);
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 27, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 27), "H:i"), "html", null, true);
         echo " (<em>";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 25, $this->source); })()), "getTypeReu", [], "method", false, false, false, 25), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 27, $this->source); })()), "getTypeReu", [], "method", false, false, false, 27), "html", null, true);
         echo ")</em>.</p>
 \t\t        \t<p>Lieu : ";
-        // line 26
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 26, $this->source); })()), "getLieuReu", [], "method", false, false, false, 26), "html", null, true);
+        // line 28
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 28, $this->source); })()), "getLieuReu", [], "method", false, false, false, 28), "html", null, true);
         echo "</p>
 \t\t        \t 
 \t\t\t\t</div>
 \t  \t\t\t<div class=\"card-body\">
 \t  \t\t\t\t<p>Ordre du jour : ";
-        // line 30
-        echo nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 30, $this->source); })()), "getContenu", [], "method", false, false, false, 30), "html", null, true));
+        // line 32
+        echo nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 32, $this->source); })()), "getContenu", [], "method", false, false, false, 32), "html", null, true));
         echo "</p>
 \t\t  \t\t\t<p><em>Proposé par : ";
-        // line 31
-        (((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["reunionTrouvee"] ?? null), "getUser", [], "method", false, true, false, 31), "getPrenom", [], "method", true, true, false, 31) &&  !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["reunionTrouvee"] ?? null), "getUser", [], "method", false, true, false, 31), "getPrenom", [], "method", false, false, false, 31)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["reunionTrouvee"] ?? null), "getUser", [], "method", false, true, false, 31), "getPrenom", [], "method", false, false, false, 31), "html", null, true))) : (print ("")));
+        // line 33
+        (((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["reunionTrouvee"] ?? null), "getUser", [], "method", false, true, false, 33), "getPrenom", [], "method", true, true, false, 33) &&  !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["reunionTrouvee"] ?? null), "getUser", [], "method", false, true, false, 33), "getPrenom", [], "method", false, false, false, 33)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["reunionTrouvee"] ?? null), "getUser", [], "method", false, true, false, 33), "getPrenom", [], "method", false, false, false, 33), "html", null, true))) : (print ("")));
         echo ", le ";
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 31, $this->source); })()), "getDatetimePost", [], "method", false, false, false, 31), "d/m/Y"), "html", null, true);
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 33, $this->source); })()), "getDatetimePost", [], "method", false, false, false, 33), "d/m/Y"), "html", null, true);
         echo "</em></p>        
 \t\t\t    </div>\t
 \t\t\t    ";
-        // line 33
-        if ( !twig_test_empty((isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 33, $this->source); })()))) {
-            // line 34
+        // line 35
+        if ( !twig_test_empty((isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 35, $this->source); })()))) {
+            // line 36
             echo "\t\t\t\t    <div class=\"card-title m-3\">
 \t\t\t\t    \t<h4>Compte Rendu</h4>
 \t\t\t\t    </div>
 \t\t\t\t    <div class=\"card-body\">
 \t\t\t    \t\t<p><b>";
-            // line 38
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 38, $this->source); })()), "getTitre", [], "method", false, false, false, 38), "html", null, true);
+            // line 40
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 40, $this->source); })()), "getTitre", [], "method", false, false, false, 40), "html", null, true);
             echo "</b></p>
 \t\t            \t<p>";
-            // line 39
-            echo nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 39, $this->source); })()), "getContenu", [], "method", false, false, false, 39), "html", null, true));
+            // line 41
+            echo nl2br(twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 41, $this->source); })()), "getContenu", [], "method", false, false, false, 41), "html", null, true));
             echo "</p>
 \t\t           \t\t<p>Publié le ";
-            // line 40
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 40, $this->source); })()), "getDatetimePost", [], "method", false, false, false, 40), "d/m/Y"), "html", null, true);
+            // line 42
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 42, $this->source); })()), "getDatetimePost", [], "method", false, false, false, 42), "d/m/Y"), "html", null, true);
             echo " à ";
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 40, $this->source); })()), "getDatetimePost", [], "method", false, false, false, 40), "H:i"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 42, $this->source); })()), "getDatetimePost", [], "method", false, false, false, 42), "H:i"), "html", null, true);
             echo "
 \t\t              \t";
-            // line 41
-            if (twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getDatetimeModif", [], "method", true, true, false, 41)) {
-                // line 42
+            // line 43
+            if (twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getDatetimeModif", [], "method", true, true, false, 43)) {
+                // line 44
                 echo "\t\t       \t\t \t\t,<em> modifié le ";
-                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 42, $this->source); })()), "getDatetimeModif", [], "method", false, false, false, 42), "d/m/Y"), "html", null, true);
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 44, $this->source); })()), "getDatetimeModif", [], "method", false, false, false, 44), "d/m/Y"), "html", null, true);
                 echo " à ";
-                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 42, $this->source); })()), "getDatetimeModif", [], "method", false, false, false, 42), "H:i"), "html", null, true);
+                echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["crTrouve"]) || array_key_exists("crTrouve", $context) ? $context["crTrouve"] : (function () { throw new RuntimeError('Variable "crTrouve" does not exist.', 44, $this->source); })()), "getDatetimeModif", [], "method", false, false, false, 44), "H:i"), "html", null, true);
                 echo "</em> 
 \t\t       \t\t\t";
             }
-            // line 44
+            // line 46
             echo "\t\t       \t\t\t\t- par ";
-            (((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getUser", [], "method", false, true, false, 44), "getPrenom", [], "method", true, true, false, 44) &&  !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getUser", [], "method", false, true, false, 44), "getPrenom", [], "method", false, false, false, 44)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getUser", [], "method", false, true, false, 44), "getPrenom", [], "method", false, false, false, 44), "html", null, true))) : (print ("")));
+            (((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getUser", [], "method", false, true, false, 46), "getPrenom", [], "method", true, true, false, 46) &&  !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getUser", [], "method", false, true, false, 46), "getPrenom", [], "method", false, false, false, 46)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["crTrouve"] ?? null), "getUser", [], "method", false, true, false, 46), "getPrenom", [], "method", false, false, false, 46), "html", null, true))) : (print ("")));
             echo ".</p>\t
 \t\t\t        </div>
 \t\t\t    ";
         }
-        // line 46
+        // line 48
         echo "   \t\t              
 \t\t\t</div>
 \t\t</div>
@@ -219,7 +225,7 @@ class __TwigTemplate_af4582775920df2ddd352ac1b59b759d57f7589069a8df15998336403fa
 
     public function getDebugInfo()
     {
-        return array (  197 => 46,  190 => 44,  182 => 42,  180 => 41,  174 => 40,  170 => 39,  166 => 38,  160 => 34,  158 => 33,  151 => 31,  147 => 30,  140 => 26,  132 => 25,  126 => 22,  120 => 18,  114 => 16,  108 => 14,  102 => 12,  100 => 11,  95 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  203 => 48,  196 => 46,  188 => 44,  186 => 43,  180 => 42,  176 => 41,  172 => 40,  166 => 36,  164 => 35,  157 => 33,  153 => 32,  146 => 28,  138 => 27,  132 => 24,  126 => 20,  120 => 18,  114 => 16,  108 => 14,  102 => 12,  100 => 11,  95 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -236,6 +242,8 @@ class __TwigTemplate_af4582775920df2ddd352ac1b59b759d57f7589069a8df15998336403fa
 \t\t\t\t<a href=\"{{ path('index_reunions') }}\" class=\"btn btn-primary mt-4\" role=\"button\"><i class=\"fas fa-angle-left\"></i> Retour aux réunions</a>
 \t\t\t\t{% if crTrouve is not empty %}
 \t\t\t\t\t<a href=\"{{ path('edit_cr', {id : reunionTrouvee.getId()}) }}\" class=\"btn btn-secondary mt-4\" role=\"button\">Modifier CR</a>
+\t\t\t\t{%else  %}
+\t\t\t\t\t<a href=\"{{ path('add_cr', {id : reunionTrouvee.getId()}) }}\" class=\"btn btn-secondary mt-4\" role=\"button\">Ajouter CR</a>
 \t\t\t\t{% endif %}
 \t\t\t\t<a title=\"Gestion de cette réunion\"href=\"{{ path('view_back_reunion', {id :reunionTrouvee.getId()}) }}\" class=\"btn btn-secondary mt-4 \" role=\"button\"><i class=\"fas fa-cogs\"></i> </a> 
 \t\t\t{% else %}

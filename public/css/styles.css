@@ -23,14 +23,12 @@ body{
 	font-family: 'arial';
 	padding: 0;
 	margin:0;
-}
-
-#top-content{
 	background: url(../images/img3.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-
 }
+
+
 nav{
 	min-height: 4em;
 	background: rgb(46, 127, 240);
