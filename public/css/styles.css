@@ -70,9 +70,6 @@ h2{
 	font-size: 2.5em;
 }
 
-.hidden{
-	display: none;
-}
 
  /********************************* header *************************/
 
@@ -115,7 +112,6 @@ h2{
 }
 /**************************** navbar ****************************/
 nav ul li a{
-	text-transform: uppercase;
 	font-weight: bold;
 	line-height: 50px;
 }
@@ -159,7 +155,7 @@ nav ul li a.active{
 }
 .dropdown-menu-perso{
 	width: min-content;
-	margin-left: auto;
+	margin-left: -4.5em;
 }
 
 
@@ -241,36 +237,6 @@ nav ul li a.active{
 	height: 15em;
 }
 
-/*Medias queries*/
-
-
-/*moyen*/
-@media screen and (min-width: 360px) and (max-width:768px) {
-	/*.name-asso {
-		font-size :2em;	
-	}*/
-	h2 {
-		font-size : 2.5em;
-	}
-	.policy {
-		font-size: 2em;
-	}
-	
-}
-
-/*petit*/
-@media screen and (max-width: 360px){
-	/*.name-asso{
-		font-size: 1.5em;
-	
-	}*/
-		h2 {
-		font-size : 2em;
-	}
-	.policy {
-		font-size: 1.5em;
-	}	
-}
 /********** footer ********/
 
 footer{
@@ -295,4 +261,33 @@ footer{
 	text-decoration: none;
 }
 	
+/*Medias queries*/
+
+
+/*moyen*/
+@media screen and (min-width: 360px) and (max-width:768px) {
+	/*.name-asso {
+		font-size :2em;	
+	}*/
+	h2 {
+		font-size : 2.5em;
+	}
+	.policy {
+		font-size: 2em;
+	}	
+}
+
+/*petit*/
+@media screen and (max-width: 360px){
+	/*.name-asso{
+		font-size: 1.5em;
+	
+	}*/
+		h2 {
+		font-size : 2em;
+	}
+	.policy {
+		font-size: 1.5em;
+	}	
+}
 
