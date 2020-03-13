@@ -2,7 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Site pour l'association de motoclubBMW38 - partie publique">
+        <meta name="author" content="MG GD">
+
+        <title>{% block title %}Bienvenue ! {% endblock %}</title>
         	
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" >
 		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -21,6 +26,7 @@
 		<link rel="icon" href="/images/logo.jpg" />
 
         {% block stylesheets %}{% endblock %}
+
     </head>
 
     <body>
@@ -56,8 +62,6 @@
 								<li class="nav-item {% if page_name is defined and page_name == 'Réunions' %}active{%endif%}">
 									<a class="nav-link nav-perso" href="{{ path('index_reunions') }}">Réunions</a>
 								</li>				
-								{#{% if 'bureau' in app.session.get('ranks') %}#}
-								{#{% endif %}#}
 							</ul>
 						</div>
 						<div class="col-md-4 text-center align-middle my-auto d-flex justify-content-center">
@@ -65,16 +69,17 @@
 						</div>
 						<div class="col-md-4 align-middle text-right my-auto d-flex justify-content-end">
 							<ul class="navbar-nav ml-lg-auto d-flex">
+
 								{% if app.session.get('ranks') is not null %}
-							    <li class="nav-item dropdown ">
-							    	<a class="nav-link dropdown-toggle nav-perso" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							          {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}
-							    	</a>
-							    	<div class="dropdown-menu  pr-0" aria-labelledby="navbarDropdown">
-							        	<a class="dropdown-item " href="{{ path('admin_accueil') }}"  aria-disabled="true">Espace Perso</a>
-							        	<a class="dropdown-item" href="{{ path('deconnexion_user') }}" aria-disabled="true">Déconnexion</a>
-							    	</div>
-							    </li>
+								    <li class="nav-item dropdown ">
+								    	<a class="nav-link dropdown-toggle nav-perso" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								          {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}
+								    	</a>
+								    	<div class="dropdown-menu  pr-0" aria-labelledby="navbarDropdown">
+								        	<a class="dropdown-item " href="{{ path('admin_accueil') }}"  aria-disabled="true">Espace Perso</a>
+								        	<a class="dropdown-item" href="{{ path('deconnexion_user') }}" aria-disabled="true">Déconnexion</a>
+								    	</div>
+								    </li>
 								{% else %}
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle nav-perso connexion-perso" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,6 +91,7 @@
 									</div>
 								</li>
 								{% endif %}
+
 							</ul>
 						</div>
 					</div>
@@ -95,9 +101,7 @@
 			<main class="px-0">
 				<div class="container">
 
-
 					{% block content %}{% endblock %}
-
 
 				</div>
 			</main>
@@ -106,7 +110,7 @@
 		<footer class="base-footer footer px-5 h-auto"> <!-- fixed-bottom -->
 			<div class="row">			
 				<div class="col-md-4 align-middle my-auto"><a href ="{{ path('confidentialite') }}" class="colorlink footerlink">Politique de confidentialité</a></div>
-				<div class="col-md-4 text-center align-middle copyright my-auto ">GSM3 Copyright &copy; - {{"now"|date("Y")}}</div>
+				<div class="col-md-4 text-center align-middle copyright my-auto ">MG GD Copyright &copy; - {{"now"|date("Y")}}</div>
 				<div class="col-md-4 align-middle text-right my-auto"><a href="https://www.flickr.com/photos/136404712@N02/albums" target="blank" class="colorlink footerlink">Site photo de l'Amicale</a></div>
 			</div>  
 		</footer>
@@ -117,14 +121,9 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<!-- fancybox -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
 		<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
 		<script src="/js/jquery.cookie.js"></script>
 
-
-
-
-		
         {% block javascripts %}{% endblock %}
 
     </body>

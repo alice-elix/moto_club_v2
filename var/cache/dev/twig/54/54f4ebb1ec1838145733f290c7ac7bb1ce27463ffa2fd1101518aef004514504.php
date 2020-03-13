@@ -73,62 +73,62 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
 
     <body class=\"bg-dark\">
         <nav class=\"navbar navbar-expand navbar-dark bg-dark static-top\">
-
-            <a class=\"navbar-brand mr-1\" href=\"";
-        // line 25
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_accueil");
-        echo "\">Espace Perso</a>
-
             <button class=\"btn btn-link btn-sm text-white order-1 order-sm-0\" id=\"sidebarToggle\" href=\"#\">
-                <i class=\"fas fa-bars\"></i>
+                <i class=\"fas fa-bars medium-title\"></i>
             </button>
-
+            <a class=\"navbar-brand mr-1\" href=\"";
+        // line 27
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_accueil");
+        echo "\"><h1 class=\"medium-title\">Espace Perso</h1></a>
+            
             <!-- Navbar Search -->
             <form class=\"d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0\"></form>
-
+            
             <!-- Navbar -->
             <ul id=\"admin-head-session\" class=\"navbar-nav ml-auto ml-md-0\">
 
                 ";
-        // line 37
-        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 37, $this->source); })()), "session", [], "any", false, false, false, 37), "get", [0 => "ranks"], "method", false, false, false, 37))) {
-            // line 38
-            echo "                <li class=\"nav-item dropdown\">
-                    <a id=\"head-profile-link\" class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        <figure class=\"session-avatar admin-avatar\">
-                            ";
-            // line 41
-            if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 41, $this->source); })()), "session", [], "any", false, false, false, 41), "get", [0 => "avatar"], "method", false, false, false, 41))) {
-                // line 42
-                echo "                                <img src=\"";
-                echo twig_escape_filter($this->env, ("/uploads/avatars/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 42, $this->source); })()), "session", [], "any", false, false, false, 42), "get", [0 => "avatar"], "method", false, false, false, 42)), "html", null, true);
+        // line 35
+        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 35, $this->source); })()), "session", [], "any", false, false, false, 35), "get", [0 => "ranks"], "method", false, false, false, 35))) {
+            // line 36
+            echo "                    <li class=\"nav-item dropdown\">
+                        <a id=\"head-profile-link\" class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                            <figure class=\"session-avatar admin-avatar\">
+
+                                ";
+            // line 40
+            if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 40, $this->source); })()), "session", [], "any", false, false, false, 40), "get", [0 => "avatar"], "method", false, false, false, 40))) {
+                // line 41
+                echo "                                    <img src=\"";
+                echo twig_escape_filter($this->env, ("/uploads/avatars/" . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 41, $this->source); })()), "session", [], "any", false, false, false, 41), "get", [0 => "avatar"], "method", false, false, false, 41)), "html", null, true);
                 echo "\">
-                            ";
+                                ";
             } else {
-                // line 44
-                echo "                                <img src=\"";
+                // line 43
+                echo "                                    <img src=\"";
                 echo "/images/default-user.png";
                 echo "\">
-                            ";
+                                ";
             }
-            // line 46
-            echo "                        </figure>
-                        <div class=\"mx-3\">";
+            // line 45
+            echo "
+                            </figure>
+                            <div class=\"mx-3\">";
             // line 47
             echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 47, $this->source); })()), "session", [], "any", false, false, false, 47), "get", [0 => "prenom"], "method", false, false, false, 47) . " ") . twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 47, $this->source); })()), "session", [], "any", false, false, false, 47), "get", [0 => "nom"], "method", false, false, false, 47))), "html", null, true);
             echo "</div>
-                    </a>
-                    <div class=\"dropdown-menu  pr-0\" aria-labelledby=\"head-profile-link\">
-                        <a class=\"dropdown-item \" href=\"";
+                        </a>
+                        <div class=\"dropdown-menu  pr-0\" aria-labelledby=\"head-profile-link\">
+                            <a class=\"dropdown-item \" href=\"";
             // line 50
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_profile");
             echo "\"  aria-disabled=\"true\">Mon profil</a>
-                        <a class=\"dropdown-item\" href=\"";
+                            <a class=\"dropdown-item\" href=\"";
             // line 51
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deconnexion_user");
             echo "\" aria-disabled=\"true\">Déconnexion</a>
-                    </div>
-                </li>
+                        </div>
+                    </li>
                 ";
         }
         // line 55
@@ -136,8 +136,8 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
             </ul>
         </nav>
 
-        <div id=\"wrapper\">
-
+        <div id=\"wrapper\" class=\"pt-0\">
+            
             <!-- SIDE BAR -->
             <ul class=\"sidebar navbar-nav\">
                 
@@ -145,10 +145,9 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
         // line 64
         if (twig_in_filter("membre", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 64, $this->source); })()), "session", [], "any", false, false, false, 64), "get", [0 => "ranks"], "method", false, false, false, 64))) {
             // line 65
-            echo "                
-                    <li class=\"nav-item\">
+            echo "                    <li class=\"nav-item\">
                         <a class=\"nav-link\" href=\"";
-            // line 67
+            // line 66
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
             echo "\">
                             <i class=\"fas fa-angle-left\"></i>
@@ -157,51 +156,54 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                     </li>
                     <li class=\"nav-item\">
                         <a class=\"nav-link\" href=\"";
-            // line 73
+            // line 72
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_profile");
             echo "\">
                             <i class=\"fas fa-user-edit\"></i>
                             <span>Mon profil</span>
                         </a>
                     </li>
-
                 ";
         }
-        // line 80
-        echo "
-
+        // line 78
+        echo "                
                 ";
-        // line 82
-        if (twig_in_filter("adherent", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 82, $this->source); })()), "session", [], "any", false, false, false, 82), "get", [0 => "ranks"], "method", false, false, false, 82))) {
-            // line 83
-            echo "
-                    <li class=\"nav-item dropdown\">
+        // line 79
+        if (twig_in_filter("bureau", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 79, $this->source); })()), "session", [], "any", false, false, false, 79), "get", [0 => "ranks"], "method", false, false, false, 79))) {
+            // line 80
+            echo "                    <li class=\"nav-item dropdown\">
                         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"pagesDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                             <i class=\"fas fa-road\"></i>
                             <span>Balades</span>
                         </a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"pagesDropdown\">
                             <a class=\"dropdown-item\" href=\"";
-            // line 90
+            // line 86
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_balade");
-            echo "\">Proposer une balade</a>
-                            ";
+            echo "\">Ajouter</a>
+                            <a class=\"dropdown-item\" href=\"";
+            // line 87
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("gestion_balades");
+            echo "\">Gérer</a>
+                        </div>
+                    </li>
+                ";
+        } elseif (twig_in_filter("adherent", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 90
+(isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 90, $this->source); })()), "session", [], "any", false, false, false, 90), "get", [0 => "ranks"], "method", false, false, false, 90))) {
             // line 91
-            if (twig_in_filter("bureau", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 91, $this->source); })()), "session", [], "any", false, false, false, 91), "get", [0 => "ranks"], "method", false, false, false, 91))) {
-                // line 92
-                echo "                                <a class=\"dropdown-item\" href=\"";
-                echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("gestion_balades");
-                echo "\">Gérer les balades</a>
-                            ";
-            }
-            // line 94
-            echo "                        </div>
+            echo "                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"";
+            // line 92
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_balade");
+            echo "\">
+                            <i class=\"fas fa-road\"></i>
+                            <span>Proposer</span>
+                        </a>
                     </li>
                 ";
         }
-        // line 97
+        // line 98
         echo "
-
                 ";
         // line 99
         if (twig_in_filter("bureau", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 99, $this->source); })()), "session", [], "any", false, false, false, 99), "get", [0 => "ranks"], "method", false, false, false, 99))) {
@@ -212,102 +214,51 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                             <span>Réunions</span>
                         </a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"pagesDropdown\">
-                            ";
+                            <a class=\"dropdown-item\" href=\"";
             // line 106
-            if (twig_in_filter("bureau", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 106, $this->source); })()), "session", [], "any", false, false, false, 106), "get", [0 => "ranks"], "method", false, false, false, 106))) {
-                // line 107
-                echo "                            <a class=\"dropdown-item\" href=\"";
-                echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_reunion");
-                echo "\">Ajouter une réunion</a>
-                            ";
-            }
-            // line 109
-            echo "                            <a class=\"dropdown-item\" href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_reunion");
+            echo "\">Ajouter</a>
+                            <a class=\"dropdown-item\" href=\"";
+            // line 107
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_back_reunions");
-            echo "\">Liste des réunions</a>
+            echo "\">Gérer</a>
                         </div>
                     </li>
-
-
-                    <!-- <li class=\"nav-item\">
-                        <a class=\"nav-link\" href=\"#\">
-                            <i class=\"fas fa-chart-area\"></i>
-                            <span>Statistiques</span>
-                        </a>
-                    </li> -->
-
                     <li class=\"nav-item\">
                         <a class=\"nav-link\" href=\"";
-            // line 122
+            // line 111
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("liste_users");
             echo "\">
                             <i class=\"fas fa-users-cog\"></i>
                             <span>Utilisateurs</span>
                         </a>
                     </li>
-
                 ";
         }
-        // line 129
+        // line 117
         echo "
-
-                
-
-
-                
-                <!-- <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">
-                        <i class=\"fas fa-fw fa-tachometer-alt\"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class=\"nav-item dropdown\">
-                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"pagesDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        <i class=\"fas fa-fw fa-folder\"></i>
-                        <span>Pages</span>
-                    </a>
-                    <div class=\"dropdown-menu\" aria-labelledby=\"pagesDropdown\">
-                        <h6 class=\"dropdown-header\">Login Screens:</h6>
-                        <a class=\"dropdown-item\" href=\"#\">Login</a>
-                        <a class=\"dropdown-item\" href=\"#\">Register</a>
-                        <a class=\"dropdown-item\" href=\"#\">Forgot Password</a>
-                        <div class=\"dropdown-divider\"></div>
-                        <h6 class=\"dropdown-header\">Other Pages:</h6>
-                        <a class=\"dropdown-item\" href=\"#\">404 Page</a>
-                        <a class=\"dropdown-item active\" href=\"#\">Blank Page</a>
-                    </div>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">
-                        <i class=\"fas fa-fw fa-chart-area\"></i>
-                        <span>Charts</span>
-                    </a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">
-                        <i class=\"fas fa-fw fa-table\"></i>
-                        <span>Tables</span>
-                    </a>
-                </li> -->
-
-
             </ul>
 
-            <div id=\"content-wrapper\">
-                <div class=\"container-fluid\">
+            <div id=\"content-wrapper\" class=\"py-0 \">
+                <div class=\"container-fluid \">
 
                     <!-- Breadcrumbs-->
-                    <ol class=\"breadcrumb d-flex justify-content-center\">
-                        <li class=\"breadcrumb-item \">
-                            Ceci est votre espace personnel
-                        </li>
-                    </ol>
+                    <div class=\"row\">
+                        <div class=\"col-12\">
+                            <ol class=\"breadcrumb d-flex justify-content-center\">
+                                <li class=\"breadcrumb-item \">
+                                    <h2 class=\"medium-title text-center\">Ceci est votre bureau virtuel</h2>
+                                    <p>Il permet de gérer votre profil ainsi que l'administration de l'association</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
 
                     <!-- CONTENT -->
                     ";
-        // line 184
+        // line 136
         $this->displayBlock('content', $context, $blocks);
-        // line 185
+        // line 137
         echo "                    <!--  -->
 
                 </div><!-- /.container-fluid -->
@@ -315,11 +266,11 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
         </div><!-- /#wrapper -->
 
         <!-- Sticky Footer -->
-        <footer class=\" sticky-footer fixed footer-admin\">
+        <footer class=\" admin-footer-perso footer px-5 h-auto\">
             <div class=\"container my-auto\">
                 <div class=\"copyright text-center my-auto\">
                     <span>GSM3 Copyright &copy; - ";
-        // line 195
+        // line 147
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</div></span>
                 </div>
@@ -347,7 +298,7 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                     <div class=\"modal-footer\">
                         <button class=\"btn btn-secondary\" type=\"button\" data-dismiss=\"modal\">Cancel</button>
                         <a class=\"btn btn-primary\" href=\"";
-        // line 220
+        // line 172
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_accueil");
         echo "\">Logout</a>
                     </div>
@@ -394,9 +345,9 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
         <!-- // <script src=\"/js/demo/chart-area-demo.js\"></script> -->
         
         ";
-        // line 264
+        // line 216
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 265
+        // line 217
         echo "
         <script>
             \$(document).ready(function() {
@@ -411,9 +362,9 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
         </script>
 
         ";
-        // line 278
-        $context["currentPath"] = $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 278, $this->source); })()), "request", [], "any", false, false, false, 278), "attributes", [], "any", false, false, false, 278), "get", [0 => "_route"], "method", false, false, false, 278), twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 278, $this->source); })()), "request", [], "any", false, false, false, 278), "attributes", [], "any", false, false, false, 278), "get", [0 => "_route_params"], "method", false, false, false, 278));
-        // line 279
+        // line 230
+        $context["currentPath"] = $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 230, $this->source); })()), "request", [], "any", false, false, false, 230), "attributes", [], "any", false, false, false, 230), "get", [0 => "_route"], "method", false, false, false, 230), twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 230, $this->source); })()), "request", [], "any", false, false, false, 230), "attributes", [], "any", false, false, false, 230), "get", [0 => "_route_params"], "method", false, false, false, 230));
+        // line 231
         echo "        <script>
 
             \$(document).ready(function() {
@@ -429,8 +380,8 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                 \$.removeCookie('currPath');
                 \$.removeCookie('currPath');
                 \$.cookie('currPath', '";
-        // line 293
-        echo twig_escape_filter($this->env, (isset($context["currentPath"]) || array_key_exists("currentPath", $context) ? $context["currentPath"] : (function () { throw new RuntimeError('Variable "currentPath" does not exist.', 293, $this->source); })()), "html", null, true);
+        // line 245
+        echo twig_escape_filter($this->env, (isset($context["currentPath"]) || array_key_exists("currentPath", $context) ? $context["currentPath"] : (function () { throw new RuntimeError('Variable "currentPath" does not exist.', 245, $this->source); })()), "html", null, true);
         echo "');
                 var currPath = \$.cookie('currPath');
 
@@ -516,7 +467,7 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
 
     }
 
-    // line 184
+    // line 136
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -534,7 +485,7 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
 
     }
 
-    // line 264
+    // line 216
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -564,7 +515,7 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
 
     public function getDebugInfo()
     {
-        return array (  538 => 264,  520 => 184,  502 => 19,  483 => 9,  433 => 293,  417 => 279,  415 => 278,  400 => 265,  398 => 264,  351 => 220,  323 => 195,  311 => 185,  309 => 184,  252 => 129,  242 => 122,  225 => 109,  219 => 107,  217 => 106,  209 => 100,  207 => 99,  203 => 97,  198 => 94,  192 => 92,  190 => 91,  186 => 90,  177 => 83,  175 => 82,  171 => 80,  161 => 73,  152 => 67,  148 => 65,  146 => 64,  135 => 55,  128 => 51,  124 => 50,  118 => 47,  115 => 46,  109 => 44,  103 => 42,  101 => 41,  96 => 38,  94 => 37,  79 => 25,  72 => 20,  70 => 19,  57 => 9,  47 => 1,);
+        return array (  489 => 216,  471 => 136,  453 => 19,  434 => 9,  384 => 245,  368 => 231,  366 => 230,  351 => 217,  349 => 216,  302 => 172,  274 => 147,  262 => 137,  260 => 136,  239 => 117,  230 => 111,  223 => 107,  219 => 106,  211 => 100,  209 => 99,  206 => 98,  197 => 92,  194 => 91,  192 => 90,  186 => 87,  182 => 86,  174 => 80,  172 => 79,  169 => 78,  160 => 72,  151 => 66,  148 => 65,  146 => 64,  135 => 55,  128 => 51,  124 => 50,  118 => 47,  114 => 45,  108 => 43,  102 => 41,  100 => 40,  94 => 36,  92 => 35,  81 => 27,  72 => 20,  70 => 19,  57 => 9,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -592,48 +543,47 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
 
     <body class=\"bg-dark\">
         <nav class=\"navbar navbar-expand navbar-dark bg-dark static-top\">
-
-            <a class=\"navbar-brand mr-1\" href=\"{{path('admin_accueil')}}\">Espace Perso</a>
-
             <button class=\"btn btn-link btn-sm text-white order-1 order-sm-0\" id=\"sidebarToggle\" href=\"#\">
-                <i class=\"fas fa-bars\"></i>
+                <i class=\"fas fa-bars medium-title\"></i>
             </button>
-
+            <a class=\"navbar-brand mr-1\" href=\"{{path('admin_accueil')}}\"><h1 class=\"medium-title\">Espace Perso</h1></a>
+            
             <!-- Navbar Search -->
             <form class=\"d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0\"></form>
-
+            
             <!-- Navbar -->
             <ul id=\"admin-head-session\" class=\"navbar-nav ml-auto ml-md-0\">
 
                 {% if app.session.get('ranks') is not null %}
-                <li class=\"nav-item dropdown\">
-                    <a id=\"head-profile-link\" class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        <figure class=\"session-avatar admin-avatar\">
-                            {% if app.session.get('avatar') is not null %}
-                                <img src=\"{{ '/uploads/avatars/' ~ app.session.get('avatar') }}\">
-                            {% else %}
-                                <img src=\"{{ '/images/default-user.png' }}\">
-                            {% endif %}
-                        </figure>
-                        <div class=\"mx-3\">{{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom')|upper }}</div>
-                    </a>
-                    <div class=\"dropdown-menu  pr-0\" aria-labelledby=\"head-profile-link\">
-                        <a class=\"dropdown-item \" href=\"{{ path('view_profile') }}\"  aria-disabled=\"true\">Mon profil</a>
-                        <a class=\"dropdown-item\" href=\"{{ path('deconnexion_user') }}\" aria-disabled=\"true\">Déconnexion</a>
-                    </div>
-                </li>
+                    <li class=\"nav-item dropdown\">
+                        <a id=\"head-profile-link\" class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                            <figure class=\"session-avatar admin-avatar\">
+
+                                {% if app.session.get('avatar') is not null %}
+                                    <img src=\"{{ '/uploads/avatars/' ~ app.session.get('avatar') }}\">
+                                {% else %}
+                                    <img src=\"{{ '/images/default-user.png' }}\">
+                                {% endif %}
+
+                            </figure>
+                            <div class=\"mx-3\">{{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom')|upper }}</div>
+                        </a>
+                        <div class=\"dropdown-menu  pr-0\" aria-labelledby=\"head-profile-link\">
+                            <a class=\"dropdown-item \" href=\"{{ path('view_profile') }}\"  aria-disabled=\"true\">Mon profil</a>
+                            <a class=\"dropdown-item\" href=\"{{ path('deconnexion_user') }}\" aria-disabled=\"true\">Déconnexion</a>
+                        </div>
+                    </li>
                 {% endif %}
 
             </ul>
         </nav>
 
-        <div id=\"wrapper\">
-
+        <div id=\"wrapper\" class=\"pt-0\">
+            
             <!-- SIDE BAR -->
             <ul class=\"sidebar navbar-nav\">
                 
                 {% if 'membre' in app.session.get('ranks') %}
-                
                     <li class=\"nav-item\">
                         <a class=\"nav-link\" href=\"{{path('accueil')}}\">
                             <i class=\"fas fa-angle-left\"></i>
@@ -646,26 +596,27 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                             <span>Mon profil</span>
                         </a>
                     </li>
-
                 {% endif %}
-
-
-                {% if 'adherent' in app.session.get('ranks') %}
-
+                
+                {% if 'bureau' in app.session.get('ranks') %}
                     <li class=\"nav-item dropdown\">
                         <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"pagesDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                             <i class=\"fas fa-road\"></i>
                             <span>Balades</span>
                         </a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"pagesDropdown\">
-                            <a class=\"dropdown-item\" href=\"{{path('add_balade')}}\">Proposer une balade</a>
-                            {% if 'bureau' in app.session.get('ranks') %}
-                                <a class=\"dropdown-item\" href=\"{{path('gestion_balades')}}\">Gérer les balades</a>
-                            {% endif %}
+                            <a class=\"dropdown-item\" href=\"{{path('add_balade')}}\">Ajouter</a>
+                            <a class=\"dropdown-item\" href=\"{{path('gestion_balades')}}\">Gérer</a>
                         </div>
                     </li>
+                {% elseif 'adherent' in app.session.get('ranks')%}
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"{{path('add_balade')}}\">
+                            <i class=\"fas fa-road\"></i>
+                            <span>Proposer</span>
+                        </a>
+                    </li>
                 {% endif %}
-
 
                 {% if 'bureau' in app.session.get('ranks') %}
                     <li class=\"nav-item dropdown\">
@@ -674,82 +625,34 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                             <span>Réunions</span>
                         </a>
                         <div class=\"dropdown-menu\" aria-labelledby=\"pagesDropdown\">
-                            {% if 'bureau' in app.session.get('ranks') %}
-                            <a class=\"dropdown-item\" href=\"{{path('add_reunion')}}\">Ajouter une réunion</a>
-                            {% endif %}
-                            <a class=\"dropdown-item\" href=\"{{path('index_back_reunions')}}\">Liste des réunions</a>
+                            <a class=\"dropdown-item\" href=\"{{path('add_reunion')}}\">Ajouter</a>
+                            <a class=\"dropdown-item\" href=\"{{path('index_back_reunions')}}\">Gérer</a>
                         </div>
                     </li>
-
-
-                    <!-- <li class=\"nav-item\">
-                        <a class=\"nav-link\" href=\"#\">
-                            <i class=\"fas fa-chart-area\"></i>
-                            <span>Statistiques</span>
-                        </a>
-                    </li> -->
-
                     <li class=\"nav-item\">
                         <a class=\"nav-link\" href=\"{{path('liste_users')}}\">
                             <i class=\"fas fa-users-cog\"></i>
                             <span>Utilisateurs</span>
                         </a>
                     </li>
-
                 {% endif %}
-
-
-                
-
-
-                
-                <!-- <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">
-                        <i class=\"fas fa-fw fa-tachometer-alt\"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class=\"nav-item dropdown\">
-                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"pagesDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        <i class=\"fas fa-fw fa-folder\"></i>
-                        <span>Pages</span>
-                    </a>
-                    <div class=\"dropdown-menu\" aria-labelledby=\"pagesDropdown\">
-                        <h6 class=\"dropdown-header\">Login Screens:</h6>
-                        <a class=\"dropdown-item\" href=\"#\">Login</a>
-                        <a class=\"dropdown-item\" href=\"#\">Register</a>
-                        <a class=\"dropdown-item\" href=\"#\">Forgot Password</a>
-                        <div class=\"dropdown-divider\"></div>
-                        <h6 class=\"dropdown-header\">Other Pages:</h6>
-                        <a class=\"dropdown-item\" href=\"#\">404 Page</a>
-                        <a class=\"dropdown-item active\" href=\"#\">Blank Page</a>
-                    </div>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">
-                        <i class=\"fas fa-fw fa-chart-area\"></i>
-                        <span>Charts</span>
-                    </a>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"#\">
-                        <i class=\"fas fa-fw fa-table\"></i>
-                        <span>Tables</span>
-                    </a>
-                </li> -->
-
 
             </ul>
 
-            <div id=\"content-wrapper\">
-                <div class=\"container-fluid\">
+            <div id=\"content-wrapper\" class=\"py-0 \">
+                <div class=\"container-fluid \">
 
                     <!-- Breadcrumbs-->
-                    <ol class=\"breadcrumb d-flex justify-content-center\">
-                        <li class=\"breadcrumb-item \">
-                            Ceci est votre espace personnel
-                        </li>
-                    </ol>
+                    <div class=\"row\">
+                        <div class=\"col-12\">
+                            <ol class=\"breadcrumb d-flex justify-content-center\">
+                                <li class=\"breadcrumb-item \">
+                                    <h2 class=\"medium-title text-center\">Ceci est votre bureau virtuel</h2>
+                                    <p>Il permet de gérer votre profil ainsi que l'administration de l'association</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
 
                     <!-- CONTENT -->
                     {% block content %}{% endblock %}
@@ -760,7 +663,7 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
         </div><!-- /#wrapper -->
 
         <!-- Sticky Footer -->
-        <footer class=\" sticky-footer fixed footer-admin\">
+        <footer class=\" admin-footer-perso footer px-5 h-auto\">
             <div class=\"container my-auto\">
                 <div class=\"copyright text-center my-auto\">
                     <span>GSM3 Copyright &copy; - {{\"now\"|date(\"Y\")}}</div></span>

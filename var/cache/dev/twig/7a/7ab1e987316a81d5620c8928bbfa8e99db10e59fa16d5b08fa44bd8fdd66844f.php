@@ -107,7 +107,7 @@ class __TwigTemplate_6faf9818858c63e9dd0137bd9d22f95b06858581ab7844927697946ba44
 
         // line 8
         echo "    
-\t<section class=\"p-2 mb-5 bg-light bg-section-back\">
+\t<section class=\"p-2 mb-2 bg-light bg-section-back\">
 \t<div class=\"d-flex justify-content-between\">
 \t\t<h2>Réunions </h2>
 \t\t<a href=\"";
@@ -354,7 +354,7 @@ class __TwigTemplate_6faf9818858c63e9dd0137bd9d22f95b06858581ab7844927697946ba44
 
 {% block content %}
     
-\t<section class=\"p-2 mb-5 bg-light bg-section-back\">
+\t<section class=\"p-2 mb-2 bg-light bg-section-back\">
 \t<div class=\"d-flex justify-content-between\">
 \t\t<h2>Réunions </h2>
 \t\t<a href=\"{{ path('index_reunions') }}\" title=\"Index des réunions sur le site\" class=\"btn btn-info mb-3\" role=\"button\"><i class=\"fas fa-globe-europe\"></i></a>

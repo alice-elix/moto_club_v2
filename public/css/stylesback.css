@@ -1,3 +1,7 @@
+/* css mutualisé des pages de la partie admin*/
+
+/*mise en forme globale*/
+
 .bg-section-back {
 	border-radius: 5px;
 }
@@ -7,11 +11,22 @@
 	padding-bottom: 0.5em;
 }
 
+.medium-title{
+	font-size: 1.5em;
+}
+
 .btn-link-red {
     box-shadow: 1px 5px 5px red;
 }
 
-/* Page d'accueil*/
+/*footer*/
+.admin-footer-perso{
+	background-color: #e9ecef;
+}
+
+
+/****************** Page d'accueil*/
+/**nav-bar*/
 .nav-link-back-perso{
 	color: #fff;
 	text-decoration: none;
@@ -54,7 +69,6 @@
 	font-size: 120%;
 }
 
-
 .admin-fig-photo {
 	width: 8em;
 	height: 8em;
@@ -74,6 +88,7 @@
 	object-fit: cover;
 	margin: 0;
 }
+
 /* Pages de gestion reunions et cr */
 
 .btn-reu {

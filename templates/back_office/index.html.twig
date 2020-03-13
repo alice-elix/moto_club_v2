@@ -17,10 +17,9 @@
               <p>Pour acceder à la page contenant vos informations personnelles, votre avatar etc.</p>
             </div>
           </a>
-          
         </div>
       </div>
-      {% endif %}                  
+    {% endif %}                  
 
     {% if 'adherent' in app.session.get('ranks') %}
       <div class="col-xl-3 col-sm-6 mb-3">
@@ -34,12 +33,14 @@
                 <p class="mb-0">Pour accèder... aux balades !</p>
             </a>
             <div class="dropdown-menu bg-transparent py-0" aria-labelledby="pages1Dropdown">
+
                 {% if 'bureau' in app.session.get('ranks') %}
-                <a class="dropdown-item text-white link-back-perso" href="{{path('add_balade')}}">Ajouter</a>
-                <a class="dropdown-item text-white link-back-perso" href="{{path('gestion_balades')}}">Gérer</a>
+                  <a class="dropdown-item text-white link-back-perso" href="{{path('add_balade')}}">Ajouter</a>
+                  <a class="dropdown-item text-white link-back-perso" href="{{path('gestion_balades')}}">Gérer</a>
                 {% else %}
-                <a class="dropdown-item text-white link-back-perso" href="{{path('add_balade')}}">Proposer</a>
+                  <a class="dropdown-item text-white link-back-perso" href="{{path('add_balade')}}">Proposer</a>
                 {% endif %}
+
             </div>
           </div>
         </div>
