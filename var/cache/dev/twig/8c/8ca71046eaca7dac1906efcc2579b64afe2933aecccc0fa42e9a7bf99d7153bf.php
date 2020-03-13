@@ -84,27 +84,25 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 6
-        echo "
-    
+        echo "  
   <section class=\"py-2 mb-1 bg-light bg-section-back\">
     <div class=\"card-header\"><h2>Ajouter une réunion</h2></div>
 
       ";
-        // line 11
-        if ( !twig_test_empty((isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 11, $this->source); })()))) {
-            // line 12
+        // line 9
+        if ( !twig_test_empty((isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 9, $this->source); })()))) {
+            // line 10
             echo "        <div class=\"alert alert-danger\">";
-            echo (isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 12, $this->source); })());
+            echo (isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 10, $this->source); })());
             echo "</div>
       ";
-        } elseif ((        // line 13
-(isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 13, $this->source); })()) == true)) {
-            // line 14
+        } elseif ((        // line 11
+(isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 11, $this->source); })()) == true)) {
+            // line 12
             echo "        <div class=\"alert alert-success\">Votre réunion a bien été ajoutée</div>
       ";
         }
-        // line 16
+        // line 14
         echo "
     <div class=\"card-body\">
       <form method=\"post\">
@@ -113,8 +111,8 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
             <div class=\"col-md-6\">
               <label for=\"titre\">Intitulé de la réunion</label>
               <input type=\"text\" id=\"titre\" name=\"titre\" class=\"form-control\" required=\"required\" autofocus=\"autofocus\" value=\"";
-        // line 23
-        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "titre", [], "any", true, true, false, 23) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "titre", [], "any", false, false, false, 23)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "titre", [], "any", false, false, false, 23), "html", null, true))) : (print ("")));
+        // line 21
+        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "titre", [], "any", true, true, false, 21) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "titre", [], "any", false, false, false, 21)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "titre", [], "any", false, false, false, 21), "html", null, true))) : (print ("")));
         echo "\">
             </div>
             <div class=\"col-md-6\">
@@ -123,11 +121,11 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
                 <option value=\"0\">-- Sélectionnez --</option>            
                   
                   ";
-        // line 30
+        // line 28
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["typesReu"]) || array_key_exists("typesReu", $context) ? $context["typesReu"] : (function () { throw new RuntimeError('Variable "typesReu" does not exist.', 30, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["typesReu"]) || array_key_exists("typesReu", $context) ? $context["typesReu"] : (function () { throw new RuntimeError('Variable "typesReu" does not exist.', 28, $this->source); })()));
         foreach ($context['_seq'] as $context["key"] => $context["typeReu"]) {
-            // line 31
+            // line 29
             echo "                    <option value=\"";
             echo twig_escape_filter($this->env, $context["key"], "html", null, true);
             echo "\">";
@@ -138,7 +136,7 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['key'], $context['typeReu'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 31
         echo "
               </select>
             </div>
@@ -147,8 +145,8 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
         <div class=\"form-group\">
           <label for=\"contenu\">Ordre du jour</label>
           <textarea id=\"contenu\" name=\"contenu\" class=\"form-control\" required=\"required\">";
-        // line 40
-        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "contenu", [], "any", true, true, false, 40) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "contenu", [], "any", false, false, false, 40)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "contenu", [], "any", false, false, false, 40), "html", null, true))) : (print ("")));
+        // line 38
+        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "contenu", [], "any", true, true, false, 38) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "contenu", [], "any", false, false, false, 38)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "contenu", [], "any", false, false, false, 38), "html", null, true))) : (print ("")));
         echo "</textarea>
         </div>
         <div class=\"form-group\">
@@ -156,22 +154,22 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
             <div class=\"col-md-4\">
               <label for=\"date_reu\">Date de la réunion</label>
               <input type=\"date\" id=\"date_reu\" name=\"date_reu\" class=\"form-control\" required=\"required\" value=\"";
-        // line 46
-        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "date_reu", [], "any", true, true, false, 46) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "date_reu", [], "any", false, false, false, 46)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "date_reu", [], "any", false, false, false, 46), "html", null, true))) : (print ("")));
+        // line 44
+        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "date_reu", [], "any", true, true, false, 44) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "date_reu", [], "any", false, false, false, 44)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "date_reu", [], "any", false, false, false, 44), "html", null, true))) : (print ("")));
         echo "\">
             </div>
             <div class=\"col-md-4\">
               <label for=\"time_reu\">Heure de la réunion</label>
               <input type=\"time\" id=\"time_reu\" name=\"time_reu\" class=\"form-control\" required=\"required\"value=\"";
-        // line 50
-        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "time_reu", [], "any", true, true, false, 50) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "time_reu", [], "any", false, false, false, 50)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "time_reu", [], "any", false, false, false, 50), "html", null, true))) : (print ("")));
+        // line 48
+        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "time_reu", [], "any", true, true, false, 48) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "time_reu", [], "any", false, false, false, 48)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "time_reu", [], "any", false, false, false, 48), "html", null, true))) : (print ("")));
         echo "\">
             </div>
             <div class=\"col-md-4\">
                 <label for=\"lieu\">Lieu de la réunion</label>
                 <input type=\"text\" id=\"lieu\" name=\"lieu\" class=\"form-control\" required=\"required\" value=\"";
-        // line 54
-        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "lieu", [], "any", true, true, false, 54) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "lieu", [], "any", false, false, false, 54)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "lieu", [], "any", false, false, false, 54), "html", null, true))) : (print ("")));
+        // line 52
+        (((twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "lieu", [], "any", true, true, false, 52) &&  !(null === twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "lieu", [], "any", false, false, false, 52)))) ? (print (twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["donnees_saisies"] ?? null), "lieu", [], "any", false, false, false, 52), "html", null, true))) : (print ("")));
         echo "\">
             </div>
           </div>
@@ -179,19 +177,19 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
         <div class=\"card-body\">
           
           ";
-        // line 60
-        if (((isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 60, $this->source); })()) == true)) {
-            // line 61
+        // line 58
+        if (((isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 58, $this->source); })()) == true)) {
+            // line 59
             echo "            <a class=\"btn btn-primary btn-block\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_reunion");
             echo "\" role=\"button\">Ajouter une autre réunion</a>
           ";
         } else {
-            // line 63
+            // line 61
             echo "            <input type=\"submit\" value=\"Ajouter\" class=\"btn btn-primary btn-block\">
           ";
         }
-        // line 65
+        // line 63
         echo "
         </div>
       </form>
@@ -219,7 +217,7 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
 
     public function getDebugInfo()
     {
-        return array (  195 => 65,  191 => 63,  185 => 61,  183 => 60,  174 => 54,  167 => 50,  160 => 46,  151 => 40,  142 => 33,  131 => 31,  127 => 30,  117 => 23,  108 => 16,  104 => 14,  102 => 13,  97 => 12,  95 => 11,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  193 => 63,  189 => 61,  183 => 59,  181 => 58,  172 => 52,  165 => 48,  158 => 44,  149 => 38,  140 => 31,  129 => 29,  125 => 28,  115 => 21,  106 => 14,  102 => 12,  100 => 11,  95 => 10,  93 => 9,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -228,9 +226,7 @@ class __TwigTemplate_60c2e011b35bac39313dd5269a10081404bca30373c97dd41835843c8ba
 
 {% block title %}Réunions{% endblock %}
 
-{% block content %}
-
-    
+{% block content %}  
   <section class=\"py-2 mb-1 bg-light bg-section-back\">
     <div class=\"card-header\"><h2>Ajouter une réunion</h2></div>
 

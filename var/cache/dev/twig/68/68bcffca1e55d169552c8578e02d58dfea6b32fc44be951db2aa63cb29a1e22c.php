@@ -86,7 +86,7 @@ class __TwigTemplate_32aef4dc4759c25e4b8b9569433d09601dbd787203c5612bf441072cdf8
 
         // line 6
         echo "
-\t<section class=\"py-2 mb-1 container\">\t\t
+\t<section class=\"py-2 mb-5 container\">\t\t
 \t\t<div class=\"card-deck my-4\">
 \t\t\t<div class=\"card\">
 \t\t\t\t<div class=\"card-header\">
@@ -337,7 +337,7 @@ class __TwigTemplate_32aef4dc4759c25e4b8b9569433d09601dbd787203c5612bf441072cdf8
 
 {% block content %}
 
-\t<section class=\"py-2 mb-1 container\">\t\t
+\t<section class=\"py-2 mb-5 container\">\t\t
 \t\t<div class=\"card-deck my-4\">
 \t\t\t<div class=\"card\">
 \t\t\t\t<div class=\"card-header\">

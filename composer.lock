@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52ff7ccdc2fc9431ae7362730d660a93",
+    "content-hash": "647bb46ffb45ab1ecbb14847abb20fb5",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -6201,6 +6201,7 @@
                 "code",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2019-08-31T14:14:34+00:00"
         },
         {
@@ -6255,6 +6256,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],

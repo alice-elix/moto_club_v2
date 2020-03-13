@@ -85,34 +85,35 @@ class __TwigTemplate_553c8851a0cf153249dded42671583ebfe20bde164db71ffa70208cfdc0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 6
-        echo "
-
-<section class=\"py-2 mb-5\">
-  <div class=\"card card-register mx-auto mt-5\">
+        echo "  <section class=\"py-2 mb-1 bg-light bg-section-back\">
     <div class=\"card-header\">Ajouter un compte-rendu pour ";
-        // line 10
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 10, $this->source); })()), "getTitre", [], "method", false, false, false, 10), "html", null, true);
+        // line 7
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 7, $this->source); })()), "getTitre", [], "method", false, false, false, 7), "html", null, true);
         echo "</div>
-    ";
-        // line 11
-        if ( !twig_test_empty((isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 11, $this->source); })()))) {
-            // line 12
-            echo "      <div class=\"alert alert-danger\">";
-            echo (isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 12, $this->source); })());
+      
+      ";
+        // line 9
+        if ( !twig_test_empty((isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 9, $this->source); })()))) {
+            // line 10
+            echo "        <div class=\"alert alert-danger\">";
+            echo (isset($context["errors"]) || array_key_exists("errors", $context) ? $context["errors"] : (function () { throw new RuntimeError('Variable "errors" does not exist.', 10, $this->source); })());
             echo "</div>
-    ";
-        } elseif ((        // line 13
-(isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 13, $this->source); })()) == true)) {
-            // line 14
-            echo "      <div class=\"alert alert-success\">Votre CR a bien été ajouté</div>
-    ";
+      ";
+        } elseif ((        // line 11
+(isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 11, $this->source); })()) == true)) {
+            // line 12
+            echo "        <div class=\"alert alert-success\">Votre CR a bien été ajouté</div>
+      ";
         }
-        // line 16
-        echo "    <div class=\"card-body\">Réunion du ";
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 16, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 16), "Y-m-d"), "html", null, true);
+        // line 14
+        echo "
+    <div class=\"card-body\">Réunion du ";
+        // line 15
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 15, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 15), "Y-m-d"), "html", null, true);
         echo " à ";
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 16, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 16), "H:i"), "html", null, true);
-        echo "</div>
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 15, $this->source); })()), "getDatetimeReu", [], "method", false, false, false, 15), "H:i"), "html", null, true);
+        echo "
+    </div>
     <div class=\"card-body\">
       <form method=\"post\">
         <div class=\"form-group\">
@@ -134,25 +135,27 @@ class __TwigTemplate_553c8851a0cf153249dded42671583ebfe20bde164db71ffa70208cfdc0
         echo "</textarea>
         </div>
         <div class=\"card-body\">
-        ";
-        // line 32
-        if (((isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 32, $this->source); })()) == true)) {
-            // line 33
-            echo "          <a class=\"btn btn-primary btn-block\" href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit_cr", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 33, $this->source); })()), "getId", [], "method", false, false, false, 33)]), "html", null, true);
+
+          ";
+        // line 33
+        if (((isset($context["success"]) || array_key_exists("success", $context) ? $context["success"] : (function () { throw new RuntimeError('Variable "success" does not exist.', 33, $this->source); })()) == true)) {
+            // line 34
+            echo "            <a class=\"btn btn-primary btn-block\" href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("edit_cr", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["reunionTrouvee"]) || array_key_exists("reunionTrouvee", $context) ? $context["reunionTrouvee"] : (function () { throw new RuntimeError('Variable "reunionTrouvee" does not exist.', 34, $this->source); })()), "getId", [], "method", false, false, false, 34)]), "html", null, true);
             echo "\" role=\"button\">Modifier ce compte rendu </a>
-        ";
+          ";
         } else {
-            // line 35
-            echo "          <input type=\"submit\" value=\"Ajouter\" class=\"btn btn-primary btn-block\">
-        ";
+            // line 36
+            echo "            <input type=\"submit\" value=\"Ajouter\" class=\"btn btn-primary btn-block\">
+          ";
         }
-        // line 37
-        echo "        </div>
+        // line 38
+        echo "
+        </div>
       </form>
     </div>
-  </div>
-</section>
+
+  </section>
 
 ";
         
@@ -175,7 +178,7 @@ class __TwigTemplate_553c8851a0cf153249dded42671583ebfe20bde164db71ffa70208cfdc0
 
     public function getDebugInfo()
     {
-        return array (  151 => 37,  147 => 35,  141 => 33,  139 => 32,  133 => 29,  124 => 23,  111 => 16,  107 => 14,  105 => 13,  100 => 12,  98 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  153 => 38,  149 => 36,  143 => 34,  141 => 33,  134 => 29,  125 => 23,  112 => 15,  109 => 14,  105 => 12,  103 => 11,  98 => 10,  96 => 9,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -185,17 +188,17 @@ class __TwigTemplate_553c8851a0cf153249dded42671583ebfe20bde164db71ffa70208cfdc0
 {% block title %}Compte-rendu{% endblock %}
 
 {% block content %}
-
-
-<section class=\"py-2 mb-5\">
-  <div class=\"card card-register mx-auto mt-5\">
+  <section class=\"py-2 mb-1 bg-light bg-section-back\">
     <div class=\"card-header\">Ajouter un compte-rendu pour {{ reunionTrouvee.getTitre() }}</div>
-    {% if errors is not empty %}
-      <div class=\"alert alert-danger\">{{errors|raw}}</div>
-    {% elseif success == true %}
-      <div class=\"alert alert-success\">Votre CR a bien été ajouté</div>
-    {% endif %}
-    <div class=\"card-body\">Réunion du {{ reunionTrouvee.getDatetimeReu()|date(\"Y-m-d\") }} à {{ reunionTrouvee.getDatetimeReu()|date(\"H:i\") }}</div>
+      
+      {% if errors is not empty %}
+        <div class=\"alert alert-danger\">{{errors|raw}}</div>
+      {% elseif success == true %}
+        <div class=\"alert alert-success\">Votre CR a bien été ajouté</div>
+      {% endif %}
+
+    <div class=\"card-body\">Réunion du {{ reunionTrouvee.getDatetimeReu()|date(\"Y-m-d\") }} à {{ reunionTrouvee.getDatetimeReu()|date(\"H:i\") }}
+    </div>
     <div class=\"card-body\">
       <form method=\"post\">
         <div class=\"form-group\">
@@ -211,16 +214,18 @@ class __TwigTemplate_553c8851a0cf153249dded42671583ebfe20bde164db71ffa70208cfdc0
           <textarea id=\"contenu\" name=\"contenu\" class=\"form-control\" required=\"required\" >{{ donnees_saisies.contenu ?? '' }}</textarea>
         </div>
         <div class=\"card-body\">
-        {% if success == true %}
-          <a class=\"btn btn-primary btn-block\" href=\"{{ path('edit_cr', {id : reunionTrouvee.getId()}) }}\" role=\"button\">Modifier ce compte rendu </a>
-        {% else %}
-          <input type=\"submit\" value=\"Ajouter\" class=\"btn btn-primary btn-block\">
-        {% endif %}
+
+          {% if success == true %}
+            <a class=\"btn btn-primary btn-block\" href=\"{{ path('edit_cr', {id : reunionTrouvee.getId()}) }}\" role=\"button\">Modifier ce compte rendu </a>
+          {% else %}
+            <input type=\"submit\" value=\"Ajouter\" class=\"btn btn-primary btn-block\">
+          {% endif %}
+
         </div>
       </form>
     </div>
-  </div>
-</section>
+
+  </section>
 
 {% endblock %}
 ", "reunions/addCr.html.twig", "C:\\xampp\\htdocs\\moto_club_v2\\moto_club_v2\\templates\\reunions\\addCr.html.twig");

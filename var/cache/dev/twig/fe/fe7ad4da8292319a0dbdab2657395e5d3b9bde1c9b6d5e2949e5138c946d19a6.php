@@ -105,18 +105,17 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
               <p>Pour acceder à la page contenant vos informations personnelles, votre avatar etc.</p>
             </div>
           </a>
-          
         </div>
       </div>
-      ";
+    ";
         }
-        // line 23
+        // line 22
         echo "                  
 
     ";
-        // line 25
-        if (twig_in_filter("adherent", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 25, $this->source); })()), "session", [], "any", false, false, false, 25), "get", [0 => "ranks"], "method", false, false, false, 25))) {
-            // line 26
+        // line 24
+        if (twig_in_filter("adherent", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 24, $this->source); })()), "session", [], "any", false, false, false, 24), "get", [0 => "ranks"], "method", false, false, false, 24))) {
+            // line 25
             echo "      <div class=\"col-xl-3 col-sm-6 mb-3\">
         <div class=\"card text-white bg-success o-hidden h-100 clearfix small z-1\">
           <div class=\"card-body h-100\">
@@ -128,39 +127,41 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
                 <p class=\"mb-0\">Pour accèder... aux balades !</p>
             </a>
             <div class=\"dropdown-menu bg-transparent py-0\" aria-labelledby=\"pages1Dropdown\">
+
                 ";
             // line 37
             if (twig_in_filter("bureau", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 37, $this->source); })()), "session", [], "any", false, false, false, 37), "get", [0 => "ranks"], "method", false, false, false, 37))) {
                 // line 38
-                echo "                <a class=\"dropdown-item text-white link-back-perso\" href=\"";
+                echo "                  <a class=\"dropdown-item text-white link-back-perso\" href=\"";
                 echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_balade");
                 echo "\">Ajouter</a>
-                <a class=\"dropdown-item text-white link-back-perso\" href=\"";
+                  <a class=\"dropdown-item text-white link-back-perso\" href=\"";
                 // line 39
                 echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("gestion_balades");
                 echo "\">Gérer</a>
                 ";
             } else {
                 // line 41
-                echo "                <a class=\"dropdown-item text-white link-back-perso\" href=\"";
+                echo "                  <a class=\"dropdown-item text-white link-back-perso\" href=\"";
                 echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_balade");
                 echo "\">Proposer</a>
                 ";
             }
             // line 43
-            echo "            </div>
+            echo "
+            </div>
           </div>
         </div>
       </div>
     ";
         }
-        // line 47
+        // line 48
         echo " 
 
     ";
-        // line 49
-        if (twig_in_filter("bureau", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "session", [], "any", false, false, false, 49), "get", [0 => "ranks"], "method", false, false, false, 49))) {
-            // line 50
+        // line 50
+        if (twig_in_filter("bureau", twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "session", [], "any", false, false, false, 50), "get", [0 => "ranks"], "method", false, false, false, 50))) {
+            // line 51
             echo "      <div class=\"col-xl-3 col-sm-6 mb-3\">
         <div class=\"card text-white bg-primary o-hidden h-100 clearfix small z-1\">
           <div class=\"card-body h-100\">
@@ -173,11 +174,11 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
             </a>
             <div class=\"dropdown-menu bg-transparent py-0\" aria-labelledby=\"pages2Dropdown\">
               <a class=\"dropdown-item text-white link-back-perso\" href=\"";
-            // line 61
+            // line 62
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("add_reunion");
             echo "\">Ajouter</a>
               <a class=\"dropdown-item text-white link-back-perso\" href=\"";
-            // line 62
+            // line 63
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_back_reunions");
             echo "\">Gérer</a>
             </div>
@@ -188,7 +189,7 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
       <div class=\"col-xl-3 col-sm-6 mb-3\">
         <div class=\"card text-white bg-secondary o-hidden h-100 clearfix small z-1\">
           <a class=\"nav-link text-white text-decoration-none pl-0 h-100\" href=\"";
-            // line 70
+            // line 71
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("liste_users");
             echo "\">
             <div class=\"card-body h-100\">
@@ -203,7 +204,7 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
       </div>
     ";
         }
-        // line 82
+        // line 83
         echo "
   </div>
 ";
@@ -227,7 +228,7 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
 
     public function getDebugInfo()
     {
-        return array (  207 => 82,  192 => 70,  181 => 62,  177 => 61,  164 => 50,  162 => 49,  158 => 47,  151 => 43,  145 => 41,  140 => 39,  135 => 38,  133 => 37,  120 => 26,  118 => 25,  114 => 23,  98 => 11,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  208 => 83,  193 => 71,  182 => 63,  178 => 62,  165 => 51,  163 => 50,  159 => 48,  151 => 43,  145 => 41,  140 => 39,  135 => 38,  133 => 37,  119 => 25,  117 => 24,  113 => 22,  98 => 11,  94 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -251,10 +252,9 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
               <p>Pour acceder à la page contenant vos informations personnelles, votre avatar etc.</p>
             </div>
           </a>
-          
         </div>
       </div>
-      {% endif %}                  
+    {% endif %}                  
 
     {% if 'adherent' in app.session.get('ranks') %}
       <div class=\"col-xl-3 col-sm-6 mb-3\">
@@ -268,12 +268,14 @@ class __TwigTemplate_e8079a8c406ae75c9a9cfed92fe74abed000ed4089cfbea2de8da7d410c
                 <p class=\"mb-0\">Pour accèder... aux balades !</p>
             </a>
             <div class=\"dropdown-menu bg-transparent py-0\" aria-labelledby=\"pages1Dropdown\">
+
                 {% if 'bureau' in app.session.get('ranks') %}
-                <a class=\"dropdown-item text-white link-back-perso\" href=\"{{path('add_balade')}}\">Ajouter</a>
-                <a class=\"dropdown-item text-white link-back-perso\" href=\"{{path('gestion_balades')}}\">Gérer</a>
+                  <a class=\"dropdown-item text-white link-back-perso\" href=\"{{path('add_balade')}}\">Ajouter</a>
+                  <a class=\"dropdown-item text-white link-back-perso\" href=\"{{path('gestion_balades')}}\">Gérer</a>
                 {% else %}
-                <a class=\"dropdown-item text-white link-back-perso\" href=\"{{path('add_balade')}}\">Proposer</a>
+                  <a class=\"dropdown-item text-white link-back-perso\" href=\"{{path('add_balade')}}\">Proposer</a>
                 {% endif %}
+
             </div>
           </div>
         </div>
