@@ -122,9 +122,9 @@ class __TwigTemplate_fcdcfe1bfef35d28e9ae36f2d5598f0912f95eebdf4bf1def733116e7c1
 \t\t<h3 class=\"pb-5\">Qui sommes-nous ?</h3>
 \t\t\t<p class=\"pb-5\">Amicale de motards de l'Isère, notre objectif est de partager le plaisir de rouler dans un esprit de convivialité et de solidarité avec tous les passionnés de moto.</p>
 \t\t\t<div class=\"row justify-content-center\" >
-\t\t\t\t<div class=\"col-3\">
+\t\t\t\t<div class=\"col-lg-3 pt-3\">
 \t\t\t\t\t<div class=\"card h-100\">
-\t\t\t\t\t\t<div class=\"card-title jumbotron\">
+\t\t\t\t\t\t<div class=\"card-title jumbotron text-center\">
 \t\t\t\t\t\t\t<h3>Prochaine balade</h3>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"card-text mx-1\">
@@ -155,9 +155,9 @@ class __TwigTemplate_fcdcfe1bfef35d28e9ae36f2d5598f0912f95eebdf4bf1def733116e7c1
         echo "\t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-3\">
+\t\t\t\t<div class=\"col-lg-3 pt-3\">
 \t\t\t\t\t<div class=\"card h-100\">
-\t\t\t\t\t\t<div class=\"card-title jumbotron\">
+\t\t\t\t\t\t<div class=\"card-title jumbotron text-center\">
 \t\t\t\t\t\t\t<h3>Prochaine réunion</h3>\t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"card-text mx-1\">
@@ -192,9 +192,9 @@ class __TwigTemplate_fcdcfe1bfef35d28e9ae36f2d5598f0912f95eebdf4bf1def733116e7c1
         echo "\t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-3 \">
+\t\t\t\t<div class=\"col-lg-3 pt-3 \">
 \t\t\t\t\t<div class=\"card h-100\">
-\t\t\t\t\t\t<div class=\"card-title jumbotron\">
+\t\t\t\t\t\t<div class=\"card-title jumbotron text-center\">
 \t\t\t\t\t\t\t<h3>Dernière balade</h3>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
@@ -496,9 +496,9 @@ class __TwigTemplate_fcdcfe1bfef35d28e9ae36f2d5598f0912f95eebdf4bf1def733116e7c1
 \t\t<h3 class=\"pb-5\">Qui sommes-nous ?</h3>
 \t\t\t<p class=\"pb-5\">Amicale de motards de l'Isère, notre objectif est de partager le plaisir de rouler dans un esprit de convivialité et de solidarité avec tous les passionnés de moto.</p>
 \t\t\t<div class=\"row justify-content-center\" >
-\t\t\t\t<div class=\"col-3\">
+\t\t\t\t<div class=\"col-lg-3 pt-3\">
 \t\t\t\t\t<div class=\"card h-100\">
-\t\t\t\t\t\t<div class=\"card-title jumbotron\">
+\t\t\t\t\t\t<div class=\"card-title jumbotron text-center\">
 \t\t\t\t\t\t\t<h3>Prochaine balade</h3>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"card-text mx-1\">
@@ -512,9 +512,9 @@ class __TwigTemplate_fcdcfe1bfef35d28e9ae36f2d5598f0912f95eebdf4bf1def733116e7c1
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-3\">
+\t\t\t\t<div class=\"col-lg-3 pt-3\">
 \t\t\t\t\t<div class=\"card h-100\">
-\t\t\t\t\t\t<div class=\"card-title jumbotron\">
+\t\t\t\t\t\t<div class=\"card-title jumbotron text-center\">
 \t\t\t\t\t\t\t<h3>Prochaine réunion</h3>\t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"card-text mx-1\">
@@ -528,9 +528,9 @@ class __TwigTemplate_fcdcfe1bfef35d28e9ae36f2d5598f0912f95eebdf4bf1def733116e7c1
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t\t<div class=\"col-3 \">
+\t\t\t\t<div class=\"col-lg-3 pt-3 \">
 \t\t\t\t\t<div class=\"card h-100\">
-\t\t\t\t\t\t<div class=\"card-title jumbotron\">
+\t\t\t\t\t\t<div class=\"card-title jumbotron text-center\">
 \t\t\t\t\t\t\t<h3>Dernière balade</h3>
 \t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>

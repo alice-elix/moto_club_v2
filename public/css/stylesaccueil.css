@@ -25,6 +25,9 @@ main > .container {
 	text-shadow: 1px 1px 1px #fff;
 }
 
+.arrow-perso{
+	z-index: 1080;
+}
 /*
 .name-asso {
 	font-size: 5em;
