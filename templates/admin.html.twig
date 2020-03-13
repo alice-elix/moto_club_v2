@@ -47,7 +47,7 @@
                         <div class="mx-3">{{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom')|upper }}</div>
                     </a>
                     <div class="dropdown-menu  pr-0" aria-labelledby="head-profile-link">
-                        <a class="dropdown-item " href="{{ path('view_profile') }}"  aria-disabled="true">Mon compte</a>
+                        <a class="dropdown-item " href="{{ path('view_profile') }}"  aria-disabled="true">Mon profil</a>
                         <a class="dropdown-item" href="{{ path('deconnexion_user') }}" aria-disabled="true">Déconnexion</a>
                     </div>
                 </li>
@@ -174,8 +174,8 @@
                 <div class="container-fluid">
 
                     <!-- Breadcrumbs-->
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
+                    <ol class="breadcrumb d-flex justify-content-center">
+                        <li class="breadcrumb-item ">
                             Ceci est votre espace personnel
                         </li>
                     </ol>

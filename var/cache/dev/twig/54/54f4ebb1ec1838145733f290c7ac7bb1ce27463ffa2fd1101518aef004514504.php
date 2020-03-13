@@ -122,7 +122,7 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                         <a class=\"dropdown-item \" href=\"";
             // line 50
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_profile");
-            echo "\"  aria-disabled=\"true\">Mon compte</a>
+            echo "\"  aria-disabled=\"true\">Mon profil</a>
                         <a class=\"dropdown-item\" href=\"";
             // line 51
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deconnexion_user");
@@ -297,8 +297,8 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                 <div class=\"container-fluid\">
 
                     <!-- Breadcrumbs-->
-                    <ol class=\"breadcrumb\">
-                        <li class=\"breadcrumb-item\">
+                    <ol class=\"breadcrumb d-flex justify-content-center\">
+                        <li class=\"breadcrumb-item \">
                             Ceci est votre espace personnel
                         </li>
                     </ol>
@@ -618,7 +618,7 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                         <div class=\"mx-3\">{{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom')|upper }}</div>
                     </a>
                     <div class=\"dropdown-menu  pr-0\" aria-labelledby=\"head-profile-link\">
-                        <a class=\"dropdown-item \" href=\"{{ path('view_profile') }}\"  aria-disabled=\"true\">Mon compte</a>
+                        <a class=\"dropdown-item \" href=\"{{ path('view_profile') }}\"  aria-disabled=\"true\">Mon profil</a>
                         <a class=\"dropdown-item\" href=\"{{ path('deconnexion_user') }}\" aria-disabled=\"true\">Déconnexion</a>
                     </div>
                 </li>
@@ -745,8 +745,8 @@ class __TwigTemplate_114fd1a49612460f9f01b417a8768306a299a6b92e40859de201f871b97
                 <div class=\"container-fluid\">
 
                     <!-- Breadcrumbs-->
-                    <ol class=\"breadcrumb\">
-                        <li class=\"breadcrumb-item\">
+                    <ol class=\"breadcrumb d-flex justify-content-center\">
+                        <li class=\"breadcrumb-item \">
                             Ceci est votre espace personnel
                         </li>
                     </ol>

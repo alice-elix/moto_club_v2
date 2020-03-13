@@ -11,6 +11,17 @@
     box-shadow: 1px 5px 5px red;
 }
 
+/* Page d'accueil*/
+.nav-link-back-perso{
+	color: #fff;
+	text-decoration: none;
+}
+.link-back-perso:hover{
+	background-color: #343a40;
+	color: black;
+
+}
+
 
 /* Pages de gestion balades et photos */
 

@@ -29,11 +29,6 @@ body{
 }
 
 
-nav{
-	min-height: 4em;
-	background: rgb(46, 127, 240);
-	box-shadow: 1px 5px 5px black;	
-}
 
 
 main > .container {
@@ -109,6 +104,12 @@ h2{
 	margin: 0;
 }
 /**************************** navbar ****************************/
+nav{
+	min-height: 4em;
+	background: rgb(46, 127, 240);
+	box-shadow: 1px 5px 5px black;	
+}
+
 nav ul li a{
 	font-weight: bold;
 	line-height: 50px;
