@@ -169,7 +169,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t\t\t\t\t\t        \t<a class=\"dropdown-item \" href=\"";
             // line 74
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_accueil");
-            echo "\"  aria-disabled=\"true\">Mon compte</a>
+            echo "\"  aria-disabled=\"true\">Espace Perso</a>
 \t\t\t\t\t\t\t        \t<a class=\"dropdown-item\" href=\"";
             // line 75
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deconnexion_user");
@@ -424,7 +424,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t\t\t\t\t\t          {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}
 \t\t\t\t\t\t\t    \t</a>
 \t\t\t\t\t\t\t    \t<div class=\"dropdown-menu  pr-0\" aria-labelledby=\"navbarDropdown\">
-\t\t\t\t\t\t\t        \t<a class=\"dropdown-item \" href=\"{{ path('admin_accueil') }}\"  aria-disabled=\"true\">Mon compte</a>
+\t\t\t\t\t\t\t        \t<a class=\"dropdown-item \" href=\"{{ path('admin_accueil') }}\"  aria-disabled=\"true\">Espace Perso</a>
 \t\t\t\t\t\t\t        \t<a class=\"dropdown-item\" href=\"{{ path('deconnexion_user') }}\" aria-disabled=\"true\">Déconnexion</a>
 \t\t\t\t\t\t\t    \t</div>
 \t\t\t\t\t\t\t    </li>

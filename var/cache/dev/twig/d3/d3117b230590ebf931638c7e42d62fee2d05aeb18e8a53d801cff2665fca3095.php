@@ -142,19 +142,20 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
             echo "\" href=\"";
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_reunion", ["id" => twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getId", [], "method", false, false, false, 22)]), "html", null, true);
             echo "\" role=\"button\"><i class=\"far fa-eye\"></i></a>
+
 \t\t\t\t\t\t\t<b>";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getTitre", [], "method", false, false, false, 23), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getTitre", [], "method", false, false, false, 24), "html", null, true);
             echo "</b>, le ";
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getDatetimeReu", [], "method", false, false, false, 23), "d/m/Y"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getDatetimeReu", [], "method", false, false, false, 24), "d/m/Y"), "html", null, true);
             echo " (<em>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getTypeReu", [], "method", false, false, false, 23), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getTypeReu", [], "method", false, false, false, 24), "html", null, true);
             echo "</em>) \t\t\t\t\t
 \t\t\t  \t\t\t</div>
 \t\t\t\t\t\t<div class=\"card-footer small text-muted mb-2\">
 \t\t\t\t\t\t\tMise à jour le ";
-            // line 26
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getDatetimePost", [], "method", false, false, false, 26), "d/m/Y"), "html", null, true);
+            // line 27
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reuNonPassee"], "getDatetimePost", [], "method", false, false, false, 27), "d/m/Y"), "html", null, true);
             echo "
 \t\t\t\t\t\t</div>
 \t\t\t\t    </div>
@@ -165,38 +166,38 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['reuNonPassee'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 31
+        // line 32
         echo " 
 
 
 \t\t<h3>Réunions passées</h3>
 \t\t";
-        // line 35
+        // line 36
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["reunionsPassees"]) || array_key_exists("reunionsPassees", $context) ? $context["reunionsPassees"] : (function () { throw new RuntimeError('Variable "reunionsPassees" does not exist.', 35, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["reunionsPassees"]) || array_key_exists("reunionsPassees", $context) ? $context["reunionsPassees"] : (function () { throw new RuntimeError('Variable "reunionsPassees" does not exist.', 36, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["reunionPassee"]) {
-            // line 36
+            // line 37
             echo "\t\t  \t<div class=\"card-deck my-4\">
 \t\t    \t<div class=\"card\">
 \t\t\t  \t  \t<div class=\"card-header\"> 
 \t\t\t  \t\t\t<div class=\"card-title py-2\">
 \t\t\t  \t            <a title=\"Afficher la reunion\" class=\"btn btn-primary float-right\" href=\"";
-            // line 40
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_reunion", ["id" => twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getId", [], "method", false, false, false, 40)]), "html", null, true);
+            // line 41
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("view_reunion", ["id" => twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getId", [], "method", false, false, false, 41)]), "html", null, true);
             echo "\" role=\"button\"><i class=\"far fa-eye\"></i></a>
 \t\t\t  \t\t\t\t<b>";
-            // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getTitre", [], "method", false, false, false, 41), "html", null, true);
+            // line 42
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getTitre", [], "method", false, false, false, 42), "html", null, true);
             echo "</b>, le ";
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getDatetimeReu", [], "method", false, false, false, 41), "d/m/Y"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getDatetimeReu", [], "method", false, false, false, 42), "d/m/Y"), "html", null, true);
             echo " (<em>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getTypeReu", [], "method", false, false, false, 41), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getTypeReu", [], "method", false, false, false, 42), "html", null, true);
             echo "</em>)
 \t\t\t  \t\t\t</div>
 \t\t\t  \t\t\t<div class=\"card-footer small text-muted mb-2\">
 \t\t\t  \t\t\t\tMise à jour le ";
-            // line 44
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getDatetimePost", [], "method", false, false, false, 44), "d/m/Y"), "html", null, true);
+            // line 45
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reunionPassee"], "getDatetimePost", [], "method", false, false, false, 45), "d/m/Y"), "html", null, true);
             echo "
 \t\t\t  \t\t\t</div>
 \t\t\t  \t    </div>
@@ -207,7 +208,7 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['reunionPassee'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 49
+        // line 50
         echo " 
 \t</section>
 
@@ -220,7 +221,7 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
 
     }
 
-    // line 54
+    // line 55
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -251,7 +252,7 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
 
     public function getDebugInfo()
     {
-        return array (  224 => 54,  211 => 49,  199 => 44,  189 => 41,  185 => 40,  179 => 36,  175 => 35,  169 => 31,  157 => 26,  147 => 23,  141 => 22,  135 => 18,  131 => 17,  128 => 16,  122 => 13,  119 => 12,  117 => 11,  113 => 10,  109 => 8,  99 => 7,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  225 => 55,  212 => 50,  200 => 45,  190 => 42,  186 => 41,  180 => 37,  176 => 36,  170 => 32,  158 => 27,  148 => 24,  141 => 22,  135 => 18,  131 => 17,  128 => 16,  122 => 13,  119 => 12,  117 => 11,  113 => 10,  109 => 8,  99 => 7,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -278,6 +279,7 @@ class __TwigTemplate_78a987208876fdef5831b4b096d1cb81522f203b0b3234f424392fb04e3
 \t\t\t\t  \t<div class=\"card-header \">
 \t\t\t\t\t\t<div class=\"card-title py-2\">
 \t\t\t\t          \t<a title=\"Afficher la reunion\" class=\"btn btn-primary float-right\" data-dt=\"{{ reuNonPassee.getDatetimeReu()|date('Y-m-d H:i') }}\" href=\"{{ path('view_reunion', {id : reuNonPassee.getId()}) }}\" role=\"button\"><i class=\"far fa-eye\"></i></a>
+
 \t\t\t\t\t\t\t<b>{{ reuNonPassee.getTitre() }}</b>, le {{ reuNonPassee.getDatetimeReu()|date(\"d/m/Y\") }} (<em>{{ reuNonPassee.getTypeReu() }}</em>) \t\t\t\t\t
 \t\t\t  \t\t\t</div>
 \t\t\t\t\t\t<div class=\"card-footer small text-muted mb-2\">

@@ -20,6 +20,7 @@
 				  	<div class="card-header ">
 						<div class="card-title py-2">
 				          	<a title="Afficher la reunion" class="btn btn-primary float-right" data-dt="{{ reuNonPassee.getDatetimeReu()|date('Y-m-d H:i') }}" href="{{ path('view_reunion', {id : reuNonPassee.getId()}) }}" role="button"><i class="far fa-eye"></i></a>
+
 							<b>{{ reuNonPassee.getTitre() }}</b>, le {{ reuNonPassee.getDatetimeReu()|date("d/m/Y") }} (<em>{{ reuNonPassee.getTypeReu() }}</em>) 					
 			  			</div>
 						<div class="card-footer small text-muted mb-2">

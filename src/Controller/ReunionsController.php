@@ -59,7 +59,7 @@ class ReunionsController extends MasterController
             'reunionsPassees'  => $reuPass, 
             'reusNonPassees'   => $reuNotPass,
             'reusSansCr'       => $reuWithoutCr,
-            'reusSansCr'       => $reuWithoutCr,
+            // 'reusSansCr'       => $reuWithoutCr,
             //'reunionsTrouvees' => $newReus, 
             //'crTrouves' => $crFound,
         ]);

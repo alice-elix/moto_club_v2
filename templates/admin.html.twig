@@ -35,8 +35,8 @@
             <ul id="admin-head-session" class="navbar-nav ml-auto ml-md-0">
 
                 {% if app.session.get('ranks') is not null %}
-                <li class="nav-item">
-                    <a id="head-profile-link" class="nav-link" href="{{ path('view_profile') }}">
+                <li class="nav-item dropdown">
+                    <a id="head-profile-link" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <figure class="session-avatar admin-avatar">
                             {% if app.session.get('avatar') is not null %}
                                 <img src="{{ '/uploads/avatars/' ~ app.session.get('avatar') }}">
@@ -46,9 +46,10 @@
                         </figure>
                         <div class="mx-3">{{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom')|upper }}</div>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a title="Déconnexion" class="nav-link btn-link-red btn btn-outline-danger" href="{{ path('deconnexion_user') }}"><i class="fas fa-power-off"></i></a>
+                    <div class="dropdown-menu  pr-0" aria-labelledby="head-profile-link">
+                        <a class="dropdown-item " href="{{ path('view_profile') }}"  aria-disabled="true">Mon compte</a>
+                        <a class="dropdown-item" href="{{ path('deconnexion_user') }}" aria-disabled="true">Déconnexion</a>
+                    </div>
                 </li>
                 {% endif %}
 
