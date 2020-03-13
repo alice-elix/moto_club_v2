@@ -101,76 +101,95 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
         if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 44, $this->source); })()) == "Bienvenue"))) {
             echo "active";
         }
-        echo "\"><a class=\"nav-link nav-perso \" href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
-        echo "\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item ";
+        echo "\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso \" href=\"";
         // line 45
-        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 45, $this->source); })()) == "Balades"))) {
-            echo "active";
-        }
-        echo "\"><a class=\"nav-link nav-perso\" href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_balades");
-        echo "\">Balades</a></li>
-\t\t\t\t\t\t<li class=\"nav-item ";
-        // line 46
-        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 46, $this->source); })()) == "Albums"))) {
-            echo "active";
-        }
-        echo "\"><a class=\"nav-link nav-perso\" href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_albums");
-        echo "\">Albums</a></li>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("accueil");
+        echo "\">Accueil</a>
+\t\t\t\t\t\t</li>
 \t\t\t\t\t\t<li class=\"nav-item ";
         // line 47
-        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 47, $this->source); })()) == "Réunions"))) {
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 47, $this->source); })()) == "Balades"))) {
             echo "active";
         }
-        echo "\"><a class=\"nav-link nav-perso\" href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_reunions");
-        echo "\">Réunions</a></li>\t\t\t\t
-\t\t\t\t\t\t";
-        // line 49
-        echo "\t\t\t\t\t\t";
+        echo "\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso\" href=\"";
+        // line 48
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_balades");
+        echo "\">Balades</a>
+\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item ";
         // line 50
-        echo "\t\t\t\t\t</ul>
-\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase name-asso\">Amicale BMW Moto 38</h1>
-\t\t\t\t\t<ul class=\"navbar-nav ml-lg-auto perso-nav-btn d-flex justify-content-end\">
-\t\t\t\t\t\t";
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 50, $this->source); })()) == "Albums"))) {
+            echo "active";
+        }
+        echo "\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso\" href=\"";
+        // line 51
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_albums");
+        echo "\">Albums</a>
+\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item ";
         // line 53
-        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 53, $this->source); })()), "session", [], "any", false, false, false, 53), "get", [0 => "ranks"], "method", false, false, false, 53))) {
-            // line 54
-            echo "\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
-\t\t\t\t\t\t\t\t<a title=\"Déconnexion\" class=\"nav-link btn-link-red btn btn-outline-danger\" href=\"";
-            // line 55
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deconnexion_user");
-            echo "\"><i class=\"fas fa-power-off\"></i></a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1\">
-\t\t\t\t\t\t\t\t<a class=\"nav-link btn-link-grey btn btn-outline-secondary\" href=\"";
-            // line 58
+        if (((isset($context["page_name"]) || array_key_exists("page_name", $context)) && ((isset($context["page_name"]) || array_key_exists("page_name", $context) ? $context["page_name"] : (function () { throw new RuntimeError('Variable "page_name" does not exist.', 53, $this->source); })()) == "Réunions"))) {
+            echo "active";
+        }
+        echo "\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso\" href=\"";
+        // line 54
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index_reunions");
+        echo "\">Réunions</a>
+\t\t\t\t\t\t</li>\t\t\t\t
+\t\t\t\t\t\t";
+        // line 57
+        echo "\t\t\t\t\t\t";
+        // line 58
+        echo "\t\t\t\t\t</ul>
+\t\t\t\t\t<h1 class=\"justify-content-center  d-flex text-uppercase name-asso\">Amicale BMW Moto 38</h1>
+\t\t\t\t\t<ul class=\"navbar-nav ml-lg-auto d-flex\">
+\t\t\t\t\t\t";
+        // line 61
+        if ( !(null === twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 61, $this->source); })()), "session", [], "any", false, false, false, 61), "get", [0 => "ranks"], "method", false, false, false, 61))) {
+            // line 62
+            echo "\t\t\t\t\t    <li class=\"nav-item dropdown \">
+\t\t\t\t\t    \t<a class=\"nav-link dropdown-toggle nav-perso\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+\t\t\t\t\t          ";
+            // line 64
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 64, $this->source); })()), "session", [], "any", false, false, false, 64), "get", [0 => "prenom"], "method", false, false, false, 64) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 64, $this->source); })()), "session", [], "any", false, false, false, 64), "get", [0 => "nom"], "method", false, false, false, 64)), "html", null, true);
+            echo "
+\t\t\t\t\t    \t</a>
+\t\t\t\t\t    \t<div class=\"dropdown-menu dropdown-menu-perso pr-0\" aria-labelledby=\"navbarDropdown\">
+\t\t\t\t\t        \t<a class=\"dropdown-item\" href=\"";
+            // line 67
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_accueil");
-            echo "\"><i class=\"fas fa-user-edit\"></i> ";
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 58, $this->source); })()), "session", [], "any", false, false, false, 58), "get", [0 => "prenom"], "method", false, false, false, 58) . " ") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 58, $this->source); })()), "session", [], "any", false, false, false, 58), "get", [0 => "nom"], "method", false, false, false, 58)), "html", null, true);
-            echo "</a>
-\t\t\t\t\t\t\t</li>
+            echo "\"  aria-disabled=\"true\">Mon compte</a>
+\t\t\t\t\t        \t<a class=\"dropdown-item\" href=\"";
+            // line 68
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("deconnexion_user");
+            echo "\" aria-disabled=\"true\">Déconnexion</a>
+\t\t\t\t\t    \t</div>
+\t\t\t\t\t    </li>
 \t\t\t\t\t\t";
         } else {
-            // line 61
-            echo "\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
-\t\t\t\t\t\t\t\t<a title=\"Connexion\" class=\"nav-link btn-link-green btn btn-outline-success \" href=\"";
-            // line 62
+            // line 72
+            echo "\t\t\t\t\t\t<li class=\"nav-item dropdown\">
+\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle nav-perso connexion-perso\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+\t\t\t\t\t\t      <i class=\"fas fa-user-circle icon-connexion\"></i>
+\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t<div class=\"dropdown-menu dropdown-menu-perso\" aria-labelledby=\"navbarDropdown\">
+\t\t\t\t\t\t    \t<a class=\"dropdown-item\" href=\"";
+            // line 77
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("connexion_user");
-            echo "\"><i class=\"fas fa-power-off\"></i></a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
-\t\t\t\t\t\t\t\t<a class=\"nav-link btn-outline-secondary btn btn-link-grey\" href=\"";
-            // line 65
+            echo "\"  aria-disabled=\"true\">Me connecter</a>
+\t\t\t\t\t\t    \t<a class=\"dropdown-item\" href=\"";
+            // line 78
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("inscription_user");
-            echo "\">Inscription</a>
-\t\t\t\t\t\t\t</li>
+            echo "\" aria-disabled=\"true\">M'inscrire</a>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</li>
 \t\t\t\t\t\t";
         }
-        // line 68
+        // line 82
         echo "\t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t</nav>
@@ -180,9 +199,9 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
 
 \t\t\t\t\t";
-        // line 76
+        // line 90
         $this->displayBlock('content', $context, $blocks);
-        // line 77
+        // line 91
         echo "
 
 \t\t\t\t</div>
@@ -192,11 +211,11 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 \t\t<footer class=\"base-footer footer px-5 h-auto\"> <!-- fixed-bottom -->
 \t\t\t<div class=\"row\">\t\t\t
 \t\t\t\t<div class=\"col-md-4 align-middle my-auto\"><a href =\"";
-        // line 85
+        // line 99
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("confidentialite");
         echo "\" class=\"colorlink footerlink\">Politique de confidentialité</a></div>
 \t\t\t\t<div class=\"col-md-4 text-center align-middle copyright my-auto \">GSM3 Copyright &copy; - ";
-        // line 86
+        // line 100
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo "</div>
 \t\t\t\t<div class=\"col-md-4 align-middle text-right my-auto\"><a href=\"https://www.flickr.com/photos/136404712@N02/albums\" target=\"blank\" class=\"colorlink footerlink\">Site photo de l'Amicale</a></div>
@@ -218,9 +237,9 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
 \t\t
         ";
-        // line 105
+        // line 119
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 106
+        // line 120
         echo "
     </body>
 </html>
@@ -270,7 +289,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     }
 
-    // line 76
+    // line 90
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -288,7 +307,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     }
 
-    // line 105
+    // line 119
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -318,7 +337,7 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
     public function getDebugInfo()
     {
-        return array (  292 => 105,  274 => 76,  256 => 23,  237 => 5,  224 => 106,  222 => 105,  200 => 86,  196 => 85,  186 => 77,  184 => 76,  174 => 68,  168 => 65,  162 => 62,  159 => 61,  151 => 58,  145 => 55,  142 => 54,  140 => 53,  135 => 50,  133 => 49,  125 => 47,  117 => 46,  109 => 45,  101 => 44,  83 => 29,  76 => 24,  74 => 23,  53 => 5,  47 => 1,);
+        return array (  311 => 119,  293 => 90,  275 => 23,  256 => 5,  243 => 120,  241 => 119,  219 => 100,  215 => 99,  205 => 91,  203 => 90,  193 => 82,  186 => 78,  182 => 77,  175 => 72,  168 => 68,  164 => 67,  158 => 64,  154 => 62,  152 => 61,  147 => 58,  145 => 57,  140 => 54,  134 => 53,  129 => 51,  123 => 50,  118 => 48,  112 => 47,  107 => 45,  101 => 44,  83 => 29,  76 => 24,  74 => 23,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -366,29 +385,43 @@ class __TwigTemplate_ad05396b9a0379b286e3078227ac2b88ff76832929cea3c2b90c24b63d7
 
 \t\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
 \t\t\t\t\t<ul class=\"navbar-nav mr-lg-auto\">
-\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Bienvenue' %}active{%endif%}\"><a class=\"nav-link nav-perso \" href=\"{{ path('accueil') }}\">Accueil</a></li>
-\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Balades' %}active{%endif%}\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_balades') }}\">Balades</a></li>
-\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Albums' %}active{%endif%}\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_albums') }}\">Albums</a></li>
-\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Réunions' %}active{%endif%}\"><a class=\"nav-link nav-perso\" href=\"{{ path('index_reunions') }}\">Réunions</a></li>\t\t\t\t
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Bienvenue' %}active{%endif%}\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso \" href=\"{{ path('accueil') }}\">Accueil</a>
+\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Balades' %}active{%endif%}\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso\" href=\"{{ path('index_balades') }}\">Balades</a>
+\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Albums' %}active{%endif%}\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso\" href=\"{{ path('index_albums') }}\">Albums</a>
+\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item {% if page_name is defined and page_name == 'Réunions' %}active{%endif%}\">
+\t\t\t\t\t\t\t<a class=\"nav-link nav-perso\" href=\"{{ path('index_reunions') }}\">Réunions</a>
+\t\t\t\t\t\t</li>\t\t\t\t
 \t\t\t\t\t\t{#{% if 'bureau' in app.session.get('ranks') %}#}
 \t\t\t\t\t\t{#{% endif %}#}
 \t\t\t\t\t</ul>
-\t\t\t\t\t<h1 class=\"justify-content-center align-self-end d-flex text-uppercase name-asso\">Amicale BMW Moto 38</h1>
-\t\t\t\t\t<ul class=\"navbar-nav ml-lg-auto perso-nav-btn d-flex justify-content-end\">
+\t\t\t\t\t<h1 class=\"justify-content-center  d-flex text-uppercase name-asso\">Amicale BMW Moto 38</h1>
+\t\t\t\t\t<ul class=\"navbar-nav ml-lg-auto d-flex\">
 \t\t\t\t\t\t{% if app.session.get('ranks') is not null %}
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
-\t\t\t\t\t\t\t\t<a title=\"Déconnexion\" class=\"nav-link btn-link-red btn btn-outline-danger\" href=\"{{ path('deconnexion_user') }}\"><i class=\"fas fa-power-off\"></i></a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1\">
-\t\t\t\t\t\t\t\t<a class=\"nav-link btn-link-grey btn btn-outline-secondary\" href=\"{{ path('admin_accueil') }}\"><i class=\"fas fa-user-edit\"></i> {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}</a>
-\t\t\t\t\t\t\t</li>
+\t\t\t\t\t    <li class=\"nav-item dropdown \">
+\t\t\t\t\t    \t<a class=\"nav-link dropdown-toggle nav-perso\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+\t\t\t\t\t          {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}
+\t\t\t\t\t    \t</a>
+\t\t\t\t\t    \t<div class=\"dropdown-menu dropdown-menu-perso pr-0\" aria-labelledby=\"navbarDropdown\">
+\t\t\t\t\t        \t<a class=\"dropdown-item\" href=\"{{ path('admin_accueil') }}\"  aria-disabled=\"true\">Mon compte</a>
+\t\t\t\t\t        \t<a class=\"dropdown-item\" href=\"{{ path('deconnexion_user') }}\" aria-disabled=\"true\">Déconnexion</a>
+\t\t\t\t\t    \t</div>
+\t\t\t\t\t    </li>
 \t\t\t\t\t\t{% else %}
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
-\t\t\t\t\t\t\t\t<a title=\"Connexion\" class=\"nav-link btn-link-green btn btn-outline-success \" href=\"{{ path('connexion_user') }}\"><i class=\"fas fa-power-off\"></i></a>
-\t\t\t\t\t\t\t</li>
-\t\t\t\t\t\t\t<li class=\"nav-item my-auto pr-1 \">
-\t\t\t\t\t\t\t\t<a class=\"nav-link btn-outline-secondary btn btn-link-grey\" href=\"{{ path('inscription_user') }}\">Inscription</a>
-\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t<li class=\"nav-item dropdown\">
+\t\t\t\t\t\t\t<a class=\"nav-link dropdown-toggle nav-perso connexion-perso\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+\t\t\t\t\t\t      <i class=\"fas fa-user-circle icon-connexion\"></i>
+\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t<div class=\"dropdown-menu dropdown-menu-perso\" aria-labelledby=\"navbarDropdown\">
+\t\t\t\t\t\t    \t<a class=\"dropdown-item\" href=\"{{ path('connexion_user') }}\"  aria-disabled=\"true\">Me connecter</a>
+\t\t\t\t\t\t    \t<a class=\"dropdown-item\" href=\"{{ path('inscription_user') }}\" aria-disabled=\"true\">M'inscrire</a>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</li>
 \t\t\t\t\t\t{% endif %}
 \t\t\t\t\t</ul>
 \t\t\t\t</div>

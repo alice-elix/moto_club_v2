@@ -41,29 +41,43 @@
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-lg-auto">
-						<li class="nav-item {% if page_name is defined and page_name == 'Bienvenue' %}active{%endif%}"><a class="nav-link nav-perso " href="{{ path('accueil') }}">Accueil</a></li>
-						<li class="nav-item {% if page_name is defined and page_name == 'Balades' %}active{%endif%}"><a class="nav-link nav-perso" href="{{ path('index_balades') }}">Balades</a></li>
-						<li class="nav-item {% if page_name is defined and page_name == 'Albums' %}active{%endif%}"><a class="nav-link nav-perso" href="{{ path('index_albums') }}">Albums</a></li>
-						<li class="nav-item {% if page_name is defined and page_name == 'Réunions' %}active{%endif%}"><a class="nav-link nav-perso" href="{{ path('index_reunions') }}">Réunions</a></li>				
+						<li class="nav-item {% if page_name is defined and page_name == 'Bienvenue' %}active{%endif%}">
+							<a class="nav-link nav-perso " href="{{ path('accueil') }}">Accueil</a>
+						</li>
+						<li class="nav-item {% if page_name is defined and page_name == 'Balades' %}active{%endif%}">
+							<a class="nav-link nav-perso" href="{{ path('index_balades') }}">Balades</a>
+						</li>
+						<li class="nav-item {% if page_name is defined and page_name == 'Albums' %}active{%endif%}">
+							<a class="nav-link nav-perso" href="{{ path('index_albums') }}">Albums</a>
+						</li>
+						<li class="nav-item {% if page_name is defined and page_name == 'Réunions' %}active{%endif%}">
+							<a class="nav-link nav-perso" href="{{ path('index_reunions') }}">Réunions</a>
+						</li>				
 						{#{% if 'bureau' in app.session.get('ranks') %}#}
 						{#{% endif %}#}
 					</ul>
-					<h1 class="justify-content-center align-self-end d-flex text-uppercase name-asso">Amicale BMW Moto 38</h1>
-					<ul class="navbar-nav ml-lg-auto perso-nav-btn d-flex justify-content-end">
+					<h1 class="justify-content-center  d-flex text-uppercase name-asso">Amicale BMW Moto 38</h1>
+					<ul class="navbar-nav ml-lg-auto d-flex">
 						{% if app.session.get('ranks') is not null %}
-							<li class="nav-item my-auto pr-1 ">
-								<a title="Déconnexion" class="nav-link btn-link-red btn btn-outline-danger" href="{{ path('deconnexion_user') }}"><i class="fas fa-power-off"></i></a>
-							</li>
-							<li class="nav-item my-auto pr-1">
-								<a class="nav-link btn-link-grey btn btn-outline-secondary" href="{{ path('admin_accueil') }}"><i class="fas fa-user-edit"></i> {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}</a>
-							</li>
+					    <li class="nav-item dropdown ">
+					    	<a class="nav-link dropdown-toggle nav-perso" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          {{ app.session.get('prenom') ~ ' ' ~ app.session.get('nom') }}
+					    	</a>
+					    	<div class="dropdown-menu dropdown-menu-perso pr-0" aria-labelledby="navbarDropdown">
+					        	<a class="dropdown-item" href="{{ path('admin_accueil') }}"  aria-disabled="true">Mon compte</a>
+					        	<a class="dropdown-item" href="{{ path('deconnexion_user') }}" aria-disabled="true">Déconnexion</a>
+					    	</div>
+					    </li>
 						{% else %}
-							<li class="nav-item my-auto pr-1 ">
-								<a title="Connexion" class="nav-link btn-link-green btn btn-outline-success " href="{{ path('connexion_user') }}"><i class="fas fa-power-off"></i></a>
-							</li>
-							<li class="nav-item my-auto pr-1 ">
-								<a class="nav-link btn-outline-secondary btn btn-link-grey" href="{{ path('inscription_user') }}">Inscription</a>
-							</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle nav-perso connexion-perso" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						      <i class="fas fa-user-circle icon-connexion"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-perso" aria-labelledby="navbarDropdown">
+						    	<a class="dropdown-item" href="{{ path('connexion_user') }}"  aria-disabled="true">Me connecter</a>
+						    	<a class="dropdown-item" href="{{ path('inscription_user') }}" aria-disabled="true">M'inscrire</a>
+							</div>
+						</li>
 						{% endif %}
 					</ul>
 				</div>

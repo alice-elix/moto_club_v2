@@ -134,42 +134,34 @@ nav ul li a.active{
 	background: #1c69d4;
 	color: #fff;
 }
+#menu-perso{
+	position: absolute;
+	right: 0;
+}
 
 .btn-nav-item {
 	margin-bottom: auto;
 	margin-top: auto;
 }
 
-.btn-link-grey {
-	box-shadow: 1px 5px 5px grey;
-}
+.icon-connexion{
+	font-size: 2em;
 
-.btn-link-red {
-	box-shadow: 1px 5px 5px red;
 }
-.btn-link-green {
-	box-shadow: 1px 5px 5px green;
-}
-
-.btn-link-green,
-.btn-link-red,
-.btn-link-grey {
-	background-color: white;
-	height: 2.5em;
-	margin-bottom: 0.8em;
-}
-.btn-link-green,
-.btn-link-red{
-	width: 3em;
+.connexion-perso{
+	display: flex;
+	justify-content: end;
+	align-items: center;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #000;
 }
-
-.perso-nav-btn {
-	width:30%;
+.dropdown-menu-perso{
+	width: min-content;
+	margin-left: auto;
 }
+
 
 
 
